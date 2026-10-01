@@ -6,10 +6,12 @@ tools:
   - write
   - knowledge
   - todo_list
+  - shell
 allowedTools:
   - read
   - knowledge
   - todo_list
+  - shell
 permissions:
   rules:
     - capability: fs_write
@@ -36,10 +38,11 @@ Generate the smallest useful set of visual mockups needed by the intake, then st
 
 ## Rules
 
-- Use the configured OpenRouter image-generation capability.
+- Use the configured OpenRouter image-generation MCP for model discovery, generation, and editing.
 - The number of mockups is determined by the intake; do not generate a fixed number by default.
 - Build prompts from the approved intake, brand requirements, reference images, UX requirements, and visual constraints.
 - If a mockup is rejected, delete the rejected mockup and generate a replacement based on the user's feedback.
+- Treat generated images as temporary unless they become an approved durable project asset. Follow WORKSPACE_HYGIENE.md: promote approved durable assets to the repository, verify the push, then remove temporary copies.
 - If user feedback changes broad project scope, update INTAKE.md and route the change back through Agent 02 before continuing.
 - Do not begin implementation.
 - Do not treat a mockup as approved without explicit user approval.
