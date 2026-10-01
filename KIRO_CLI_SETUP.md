@@ -28,10 +28,21 @@ Do not restore a broad `file://.kiro/steering/**/*.md` resource glob to speciali
 
 ## Local Runtime Configuration
 
-These areas must be completed or validated from the machine where Kiro CLI runs:
+The currently validated reusable MCP connections are:
 
-- MCP server definitions and credentials;
-- Proxmox connectivity and authentication;
+- Gitea — direct SSH/stdin-stdout launcher through pve3 LXC 301;
+- Proxmox — direct SSH/stdin-stdout launcher through pve3 LXC 301;
+- Infisical — direct SSH/stdin-stdout launcher through `ws`;
+- Playwright — direct SSH/stdin-stdout launcher through pve3 LXC 301;
+- OpenAPI — direct SSH/stdin-stdout launcher through pve3 LXC 301;
+- OpenRouter Image — direct SSH/stdin-stdout launcher through pve3 LXC 301.
+
+See `TOOLING.md` for ownership, connection patterns, and usage rules.
+
+The deterministic `visual-compare` utility is deployed globally through `~/.local/bin/visual-compare` from an isolated environment under `~/.kiro/tools/visual-compare/`. Its canonical source belongs in this repository under `tools/visual-compare/`.
+
+These areas still require validation from the machine where Kiro CLI runs when applicable:
+
 - REAPER bridge/integration tooling;
 - hook commands that depend on installed local tools;
 - user/workspace permissions;
