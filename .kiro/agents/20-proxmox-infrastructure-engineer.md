@@ -10,8 +10,10 @@ tools:
   - "@proxmox"
 allowedTools:
   - read
+  - write
   - knowledge
   - todo_list
+  - shell
   - "@proxmox"
 permissions:
   rules:
