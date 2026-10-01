@@ -75,4 +75,4 @@ UX_COPY.md, CONTENT_GUIDE.md, and content decisions when needed.
 
 ## Handoff
 
-Provide approved interface copy to Agents 05, 08, 13, 25, and 28 as needed.
+Provide approved interface copy to Agents 05, 08, 15, 27, and 30 as needed.
