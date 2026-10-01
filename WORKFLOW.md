@@ -89,3 +89,20 @@ After Agent 02 completes intake and before mockup generation or feature definiti
 6. Only after feasibility is sufficiently established may Agent 03 generate mockups and Agent 04 define the final feature list.
 
 Do not design, approve, or implement a REAPER-dependent feature based on assumption alone.
+
+
+## WORKSPACE & ARTIFACT HYGIENE GATE
+
+`WORKSPACE_HYGIENE.md` is a global rule for every project and every agent.
+
+For any task that creates or clones local working files:
+
+1. The authoritative durable copy must live in the project's GitHub or Gitea repository.
+2. Local repository content exists only while active work requires it.
+3. Required durable changes must be committed, pushed, and verified remotely before cleanup.
+4. Temporary clones, source trees, generated images, screenshots, visual diffs, build outputs, downloads, logs, exports, and other task artifacts must be removed when their purpose is complete.
+5. After cleanup, the local project directory may retain only the required project directory structure, required Kiro metadata, and Markdown files necessary for the agents.
+6. Cleanup must be based on task state and purpose, never age alone.
+7. No cleanup may delete unpushed or otherwise unverified durable work.
+
+A task that creates local working material is not complete until durable work is pushed and verified and temporary material is cleaned.
