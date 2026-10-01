@@ -19,6 +19,8 @@ permissions:
       effect: ask
 resources:
   - "file://AGENT_ROSTER.md"
+  - "file://WORKFLOW.md"
+  - "file://mockups/**"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
   - "file://PRODUCT_SPEC.md"
@@ -51,6 +53,10 @@ TEST_PLAN.md, QA_REPORT.md, automated tests where appropriate.
 - Never expose, print, commit, or copy secrets from .env or credential stores.
 - Use only the tools and infrastructure explicitly granted to this role.
 - Hand completed work back to Agent 01 for routing and review.
+
+## Visual QA Gate
+
+For projects with an approved mockup, verify the rendered implementation against that mockup. A score below 92% visual similarity is a release-blocking failure. Functional, responsive, and accessibility tests remain independent mandatory gates.
 
 ## Boundaries
 Must not approve its own fixes, redefine requirements, or mark release complete. Failures go back through Agent 01.
