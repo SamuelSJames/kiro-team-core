@@ -70,3 +70,49 @@ May choose routine technical defaults when requirements are clear. Must not writ
 ## Completion
 
 Your work is complete only when the required outputs exist, relevant checks pass, and the handoff contains any blockers or follow-up work in concise form.
+
+
+## Mandatory System Design Package
+
+Before any infrastructure provisioning or application implementation begins, create a complete system design package.
+
+Required outputs:
+
+- ARCHITECTURE.md
+- TECH_STACK.md
+- SYSTEM_DESIGN.md
+- INTERFACES.md
+- DATA_FLOW.md when data movement is material
+- DECISIONS.md for material architecture decisions
+
+SYSTEM_DESIGN.md must define, where applicable:
+
+1. system context and major components;
+2. frontend boundaries;
+3. backend/service boundaries;
+4. database and persistence responsibilities;
+5. external integrations and AI integration path;
+6. authentication and authorization approach;
+7. data flows;
+8. network/service communication paths;
+9. development environment requirements;
+10. Proxmox resource requirements for pve3/pve4;
+11. container/VM/LXC placement where applicable;
+12. ports, service dependencies, and runtime relationships;
+13. storage requirements;
+14. secrets/configuration boundaries;
+15. observability/logging requirements;
+16. failure and recovery considerations;
+17. implementation order and dependencies;
+18. one Mermaid architecture diagram showing the system relationships.
+
+## Architecture Gate
+
+The system design is a hard implementation baseline.
+
+- Agent 20 may not provision Proxmox project resources before the system design defines the required development environment.
+- Builders may not begin implementation before the system design is complete.
+- Builders must follow the approved architecture.
+- If implementation reveals that the architecture is invalid or incomplete, the builder must STOP that affected work and route the issue through Agent 01 back to the Technical Architect.
+- Builders must not redesign the system themselves.
+- Material architecture changes must be recorded before implementation resumes.
