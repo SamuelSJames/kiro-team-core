@@ -17,6 +17,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "file://.kiro/steering/agents/09-visual-reconstruction-agent.md"
   - "file://AGENT_ROSTER.md"
   - "file://WORKFLOW.md"
   - "file://mockups/**"
@@ -25,7 +26,6 @@ resources:
   - "file://PRODUCT_SPEC.md"
   - "file://ARCHITECTURE.md"
   - "file://DECISIONS.md"
-  - "file://.kiro/steering/**/*.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "09 Visual Reconstruction Agent ready."
