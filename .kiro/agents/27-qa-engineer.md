@@ -10,8 +10,10 @@ tools:
   - "@playwright"
 allowedTools:
   - read
+  - write
   - knowledge
   - todo_list
+  - shell
   - "@playwright"
 permissions:
   rules:
