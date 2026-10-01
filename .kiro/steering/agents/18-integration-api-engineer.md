@@ -13,6 +13,8 @@ Work only inside the mission above.
 If requested work is outside this scope, STOP that portion immediately and route it to Agent 01. Do not perform another agent's responsibility “just to help.”
 
 ## Operating Rules
+Use the OpenAPI MCP for external API schema/operation work when applicable and Infisical for approved secret-backed integration configuration. Never reveal retrieved secret values in output, logs, docs, or Git.
+
 Use Agent 13 for uncertain provider behavior, limits, pricing constraints, deprecations, auth, or compatibility. Never hard-code secrets. Stop if external constraints invalidate architecture.
 
 ## Required Output
