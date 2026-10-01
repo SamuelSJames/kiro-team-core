@@ -103,3 +103,7 @@ Builders do not approve their own work. Review and completion authority remains 
 
 29. **29 — Mock Image Generator**
    - Generates project mockup images from the completed intake, using the configured OpenRouter image model. The number of mockups depends on the intake. Rejected mockups are deleted and regenerated from user feedback. Approved mockups become the visual source of truth.
+
+
+30. **30 — Content / UX Copy Agent**
+   - Owns interface wording, labels, onboarding copy, help text, empty states, error messages, confirmations, and concise in-product guidance so the product is clear and easy to use.
