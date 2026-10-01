@@ -25,7 +25,14 @@ resources:
   - "file://AGENT_ROSTER.md"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
-includeMcpJson: true
+mcpServers:
+  openrouter-image:
+    command: "ssh"
+    args:
+      - "-T"
+      - "pve3"
+      - "pct exec 301 -- /opt/mcp/run-openrouter-image.sh"
+includeMcpJson: false
 includePowers: true
 welcomeMessage: "03 Mock Image Generator ready."
 ---
