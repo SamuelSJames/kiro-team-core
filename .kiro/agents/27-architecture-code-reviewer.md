@@ -19,6 +19,7 @@ permissions:
       effect: ask
 resources:
   - "file://AGENT_ROSTER.md"
+  - "file://WORKFLOW.md"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
   - "file://PRODUCT_SPEC.md"
@@ -51,6 +52,10 @@ CODE_REVIEW.md, architecture findings.
 - Never expose, print, commit, or copy secrets from .env or credential stores.
 - Use only the tools and infrastructure explicitly granted to this role.
 - Hand completed work back to Agent 01 for routing and review.
+
+## Workflow Compliance
+
+Verify that implementation followed the approved intake, mockup gate, Proxmox-first development design, and required review flow. Do not approve architecture drift introduced merely to imitate the mockup.
 
 ## Boundaries
 Must not rewrite product requirements, approve unresolved critical findings, or act as the original builder.
