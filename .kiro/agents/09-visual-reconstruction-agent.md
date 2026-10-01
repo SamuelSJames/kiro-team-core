@@ -30,6 +30,13 @@ resources:
   - "file://PRODUCT_SPEC.md"
   - "file://ARCHITECTURE.md"
   - "file://DECISIONS.md"
+mcpServers:
+  playwright:
+    command: "ssh"
+    args:
+      - "-T"
+      - "pve3"
+      - "pct exec 301 -- /opt/mcp/run-playwright.sh"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "09 Visual Reconstruction Agent ready."
