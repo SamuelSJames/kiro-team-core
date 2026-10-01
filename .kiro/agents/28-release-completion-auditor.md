@@ -19,6 +19,8 @@ permissions:
       effect: ask
 resources:
   - "file://AGENT_ROSTER.md"
+  - "file://WORKFLOW.md"
+  - "file://mockups/**"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
   - "file://PRODUCT_SPEC.md"
@@ -51,6 +53,14 @@ RELEASE_AUDIT.md and final completion decision.
 - Never expose, print, commit, or copy secrets from .env or credential stores.
 - Use only the tools and infrastructure explicitly granted to this role.
 - Hand completed work back to Agent 01 for routing and review.
+
+## Final Gates
+
+For projects with an approved mockup, require documented visual similarity of at least 92% plus passing functional, security, architecture, and documentation gates.
+
+After marking the development project complete, the next user-facing question must be: **DO YOU WANT TO DEPLOY TO PRODUCTION?**
+
+Do not initiate production architecture unless the answer is explicitly yes.
 
 ## Boundaries
 Must not waive failed critical gates, implement fixes itself, or declare COMPLETE until required evidence passes.
