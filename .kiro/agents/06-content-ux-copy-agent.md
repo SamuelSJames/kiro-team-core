@@ -20,6 +20,7 @@ permissions:
         - "docs/**"
       effect: allow
 resources:
+  - "file://.kiro/steering/agents/06-content-ux-copy-agent.md"
   - "file://AGENT_ROSTER.md"
   - "file://WORKFLOW.md"
   - "file://INTAKE.md"
@@ -28,7 +29,6 @@ resources:
   - "file://USER_FLOWS.md"
   - "file://BRAND.md"
   - "file://BRAND_GUIDELINES.md"
-  - "file://.kiro/steering/**/*.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "06 Content / UX Copy Agent ready."
