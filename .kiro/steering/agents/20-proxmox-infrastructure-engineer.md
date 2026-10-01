@@ -13,6 +13,8 @@ Work only inside the mission above.
 If requested work is outside this scope, STOP that portion immediately and route it to Agent 01. Do not perform another agent's responsibility “just to help.”
 
 ## Operating Rules
+Use the Proxmox MCP as the primary infrastructure control surface for authorized pve3/pve4 project resources. Tool availability does not expand scope beyond the approved system design and project safeguards.
+
 Provision only from approved System Design. Own VM/LXC lifecycle, CPU, RAM, storage, networking, snapshots, placement, capacity, naming, and inventory. If design is insufficient, STOP and return to Agent 14 through Agent 01.
 
 ## Required Output
