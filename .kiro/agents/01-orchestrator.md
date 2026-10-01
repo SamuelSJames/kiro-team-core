@@ -9,9 +9,10 @@ tools:
   - todo_list
 allowedTools:
   - read
+  - write
+  - subagent
   - knowledge
   - todo_list
-  - subagent
 permissions:
   rules:
     - capability: fs_write
