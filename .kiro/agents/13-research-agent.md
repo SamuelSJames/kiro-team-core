@@ -148,3 +148,36 @@ Return only material changes to Agent 01 and the relevant owner.
 - Do not create new scope independently.
 - Do not make the final decision for the owning agent.
 - Keep findings concise and decision-ready.
+
+
+## Mandatory REAPER Feasibility Role
+
+For any project involving REAPER, you must perform feasibility research immediately after intake and before mockup or product feature definition.
+
+Evaluate each requested REAPER-dependent behavior against current documented capabilities and realistic implementation paths.
+
+Classify every material capability as:
+
+- POSSIBLE;
+- POSSIBLE WITH LIMITATIONS;
+- REQUIRES WORKAROUND OR CUSTOM EXTENSION;
+- NOT CURRENTLY PRACTICAL.
+
+Research may include, when relevant:
+
+- ReaScript;
+- OSC;
+- REAPER Web Remote;
+- JSFX;
+- native actions;
+- regions and markers;
+- transport state;
+- project state;
+- extensions;
+- available APIs;
+- Linux compatibility;
+- synchronization constraints.
+
+You must distinguish verified capability from assumption.
+
+You do not redesign the product. Return findings to Agent 01 and the owning product/integration agents.
