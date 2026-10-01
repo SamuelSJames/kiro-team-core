@@ -26,6 +26,13 @@ resources:
   - "file://PRODUCT_SPEC.md"
   - "file://ARCHITECTURE.md"
   - "file://DECISIONS.md"
+mcpServers:
+  proxmox:
+    command: "ssh"
+    args:
+      - "-T"
+      - "pve3"
+      - "pct exec 301 -- /opt/mcp/run-proxmox.sh"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "20 Proxmox Infrastructure Engineer ready."
