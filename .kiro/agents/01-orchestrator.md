@@ -35,10 +35,10 @@ permissions:
         - "*"
       effect: allow
 resources:
+  - "file://.kiro/steering/agents/01-orchestrator.md"
   - "file://AGENT_ROSTER.md"
   - "file://SCOPE_GOVERNANCE.md"
   - "file://WORKFLOW.md"
-  - "file://.kiro/steering/**/*.md"
   - "skill://.kiro/skills/**/SKILL.md"
 includeMcpJson: false
 includePowers: false
