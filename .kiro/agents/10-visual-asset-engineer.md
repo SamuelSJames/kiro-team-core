@@ -20,12 +20,14 @@ permissions:
 resources:
   - "file://.kiro/steering/agents/10-visual-asset-engineer.md"
   - "file://AGENT_ROSTER.md"
+  - "file://TOOLING.md"
+  - "file://WORKSPACE_HYGIENE.md"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
   - "file://PRODUCT_SPEC.md"
   - "file://ARCHITECTURE.md"
   - "file://DECISIONS.md"
-includeMcpJson: false
+includeMcpJson: true
 includePowers: false
 welcomeMessage: "10 Visual Asset Engineer ready."
 ---
@@ -59,6 +61,8 @@ Optimized visual assets and ASSET_MANIFEST.md.
 ## Boundaries
 
 Use SVG when vector is best; use PNG/raster when raster is best. Never replace formats universally. Preserve source quality and accessibility metadata where relevant.
+
+When assigned image-generation or image-editing support, use the OpenRouter Image MCP rather than inventing an alternate image pipeline. Generated/intermediate assets are temporary until approved as durable project assets; follow WORKSPACE_HYGIENE.md.
 
 ## Completion
 
