@@ -17,6 +17,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "file://.kiro/steering/agents/14-technical-architect.md"
   - "file://AGENT_ROSTER.md"
   - "file://WORKFLOW.md"
   - "file://INTAKE.md"
@@ -24,7 +25,6 @@ resources:
   - "file://PRODUCT_SPEC.md"
   - "file://ARCHITECTURE.md"
   - "file://DECISIONS.md"
-  - "file://.kiro/steering/**/*.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "14 Technical Architect ready."
