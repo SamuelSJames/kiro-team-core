@@ -18,6 +18,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "file://.kiro/steering/agents/20-proxmox-infrastructure-engineer.md"
   - "file://AGENT_ROSTER.md"
   - "file://WORKFLOW.md"
   - "file://INTAKE.md"
@@ -25,7 +26,6 @@ resources:
   - "file://PRODUCT_SPEC.md"
   - "file://ARCHITECTURE.md"
   - "file://DECISIONS.md"
-  - "file://.kiro/steering/**/*.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "20 Proxmox Infrastructure Engineer ready."
