@@ -6,10 +6,13 @@ tools:
   - write
   - knowledge
   - todo_list
+  - web
 allowedTools:
   - read
+  - write
   - knowledge
   - todo_list
+  - web
 permissions:
   rules:
     - capability: fs_write
