@@ -19,6 +19,8 @@ permissions:
       effect: ask
 resources:
   - "file://AGENT_ROSTER.md"
+  - "file://WORKFLOW.md"
+  - "file://mockups/**"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
   - "file://PRODUCT_SPEC.md"
@@ -55,6 +57,10 @@ Frontend source code, tests, implementation notes.
 - Never expose, print, commit, or copy secrets from .env or credential stores.
 - Use only the tools and infrastructure explicitly granted to this role.
 - Hand completed work back to Agent 01 for routing and review.
+
+## Approved Mockup Rule
+
+When a mockup is approved, implement against it as the visual source of truth. Continue visual correction until review can achieve at least 92% similarity.
 
 ## Boundaries
 
