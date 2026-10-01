@@ -27,6 +27,54 @@ Current explicit attachments:
 
 Additional MCP access must be added only when the role has a defined need.
 
+## Where Tool Limits Live
+
+Actual tool exposure belongs in each custom agent definition under `.kiro/agents/*.md`:
+
+- `tools` defines the tools the agent can see/use;
+- `allowedTools` defines which attached tools may run without an extra approval prompt;
+- agent-level `mcpServers` attaches only the MCP servers required by that role;
+- `includeMcpJson: false` prevents a specialist from inheriting the entire global MCP inventory.
+
+Steering does **not** provide the technical restriction. Steering documents when and why the attached tools should be used, reinforces ownership, and requires a hard stop when a missing capability belongs to another role.
+
+## Core Tool Assignment Matrix
+
+| Agent | Shell | Web | MCP |
+|---|---|---|---|
+| 01 Orchestrator | No | No | None |
+| 02 Intake Analyst | No | No | None |
+| 03 Mock Image Generator | Yes | No | OpenRouter Image |
+| 04 Product Architect | No | No | None |
+| 05 UX / Product Design | No | No | None |
+| 06 Content / UX Copy | No | No | None |
+| 07 Brand Strategy | No | No | None |
+| 08 UI / Visual Design | No | No | None |
+| 09 Visual Reconstruction | Yes | No | Playwright |
+| 10 Visual Asset Engineer | Yes | No | OpenRouter Image |
+| 11 Custom UI / Motion | Yes | No | None |
+| 12 3D / Interactive Visual | Yes | No | None |
+| 13 Research | No | Yes | None |
+| 14 Technical Architect | No | No | None |
+| 15 Frontend Engineer | Yes | No | Playwright |
+| 16 Backend Engineer | Yes | No | None |
+| 17 Database Engineer | Yes | No | None |
+| 18 Integration / API Engineer | Yes | No | OpenAPI, Infisical |
+| 19 DevOps / CI-CD Engineer | Yes | No | Infisical |
+| 20 Proxmox Infrastructure Engineer | Yes | No | Proxmox |
+| 21 Music Software Architect | No | No | None |
+| 22 DSP / Audio Engineer | Yes | No | None |
+| 23 MIDI Engineer | Yes | No | None |
+| 24 REAPER Integration Engineer | Yes | No | None until REAPER tooling is added |
+| 25 Linux Audio Platform Engineer | Yes | No | None |
+| 26 Documentation / Knowledge Engineer | No | No | None |
+| 27 QA Engineer | Yes | No | Playwright |
+| 28 Security Reviewer | Yes | No | None |
+| 29 Architecture / Code Reviewer | Yes | No | None |
+| 30 Release / Completion Auditor | No | No | None |
+
+All agents retain only their ordinary document/context tools needed for their role. No specialist inherits Gitea, Proxmox, Infisical, Playwright, OpenAPI, or image-generation tooling simply because the server exists globally.
+
 ## Built-in Kiro Tools
 
 - `read` — file/content inspection.
