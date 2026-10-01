@@ -23,6 +23,6 @@ Do not load unrelated steering, skills, or project documents. Prefer the smalles
 
 
 ## Model Policy
-Recommended model: **Claude Sonnet 5**.
+Recommended model: **claude-sonnet-5**.
 
-Fallback: **Auto** if the recommended model is unavailable in the local Kiro CLI environment. Use the exact model identifier exposed by the local `/model` command when configuring this agent. Do not silently substitute a weaker model for high-consequence review, architecture, infrastructure, DSP, or release decisions without recording the fallback.
+Fallback: **auto** if the recommended model is unavailable in the local Kiro CLI environment. Use the exact model identifier exposed by the local `/model` command when configuring this agent. Do not silently substitute a weaker model for high-consequence review, architecture, infrastructure, DSP, or release decisions without recording the fallback.
