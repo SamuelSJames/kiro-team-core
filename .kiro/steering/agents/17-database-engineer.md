@@ -26,3 +26,7 @@ Do not load unrelated steering, skills, or project documents. Prefer the smalles
 Recommended model: **claude-sonnet-5**.
 
 Fallback: **auto** if unavailable in the local Kiro CLI environment. Use the exact identifier shown by local `/model`. For high-consequence work, record any fallback before proceeding.
+
+
+## Tool Discipline
+Use only the tools attached to this agent's configuration. Tool availability does not transfer scope ownership. Do not route around a missing tool by using another agent's capability or a globally configured MCP. If the task requires a capability not attached to this role, STOP that portion and route it through Agent 01. Shell use is limited to schema/migration tooling, database tests, validation, and task-local cleanup inside assigned data work.
