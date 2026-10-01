@@ -9,8 +9,10 @@ tools:
   - shell
 allowedTools:
   - read
+  - write
   - knowledge
   - todo_list
+  - shell
 permissions:
   rules:
     - capability: fs_write
