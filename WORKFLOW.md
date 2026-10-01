@@ -28,7 +28,22 @@
 
 The explicitly approved mockup is the visual source of truth for the project.
 
-The 92% visual threshold applies to the rendered implementation compared with the approved mockup. Functional correctness, accessibility, responsive behavior, and security are separate gates and cannot be traded away to increase visual similarity.
+The 92% visual threshold applies to the rendered implementation compared with the approved mockup.
+
+For deterministic visual review, Agent 09 uses the global `visual-compare` utility. The canonical fidelity score is fixed:
+
+```text
+fidelity_score =
+    SSIM              * 0.50
+  + pixel_similarity  * 0.30
+  + edge_similarity   * 0.20
+```
+
+The default pass threshold is **92.00**. Reference and actual images must use identical dimensions; the tool must not silently resize mismatched inputs. Agent 09 must set the Playwright viewport to the approved reference dimensions before capture. A dimension mismatch fails the visual gate until a valid same-size comparison is produced.
+
+The score is deterministic evidence, not an AI opinion. Functional correctness, accessibility, responsive behavior, and security are separate gates and cannot be traded away to increase visual similarity.
+
+Playwright screenshots and comparison artifacts are temporary by default and must follow `WORKSPACE_HYGIENE.md` after the comparison purpose is complete.
 
 ## Resource Rule
 
