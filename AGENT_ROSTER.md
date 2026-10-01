@@ -12,7 +12,7 @@ Agent numbers and names are permanent identifiers. New specialist roles are inse
 6. **06 — Content / UX Copy Agent** — interface wording, onboarding, labels, errors, confirmations, and in-product guidance.
 7. **07 — Brand Strategy Agent** — brand identity, voice, positioning, and brand rules.
 8. **08 — UI / Visual Design Agent** — visual system, layout, typography, color, components, and hierarchy.
-9. **09 — Visual Reconstruction Agent** — visual measurement, reconstruction guidance, and similarity targeting.
+9. **09 — Visual Reconstruction Agent** — deterministic visual measurement, reconstruction guidance, Playwright capture coordination, and ≥92% fidelity validation.
 10. **10 — Visual Asset Engineer** — individual visual assets and appropriate asset formats.
 11. **11 — Custom UI / Motion Engineer** — custom controls, animation, transitions, and interaction effects.
 12. **12 — 3D / Interactive Visual Engineer** — 3D assets, scenes, Blender, WebGL, Three.js, and React Three Fiber.
