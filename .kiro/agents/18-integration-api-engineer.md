@@ -25,6 +25,19 @@ resources:
   - "file://PRODUCT_SPEC.md"
   - "file://ARCHITECTURE.md"
   - "file://DECISIONS.md"
+mcpServers:
+  openapi:
+    command: "ssh"
+    args:
+      - "-T"
+      - "pve3"
+      - "pct exec 301 -- /opt/mcp/run-openapi.sh"
+  infisical:
+    command: "ssh"
+    args:
+      - "-T"
+      - "ws"
+      - "~/.local/bin/run-infisical-mcp.sh"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "18 Integration / API Engineer ready."
