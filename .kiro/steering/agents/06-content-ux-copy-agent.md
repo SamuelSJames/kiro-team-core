@@ -26,3 +26,7 @@ Do not load unrelated steering, skills, or project documents. Prefer the smalles
 Recommended model: **gpt-5.6-luna**.
 
 Fallback: **auto** if the recommended model is unavailable in the local Kiro CLI environment. Use the exact model identifier exposed by the local `/model` command when configuring this agent. Do not silently substitute a weaker model for high-consequence review, architecture, infrastructure, DSP, or release decisions without recording the fallback.
+
+
+## Tool Discipline
+Use only the tools attached to this agent's configuration. Tool availability does not transfer scope ownership. Do not route around a missing tool by using another agent's capability or a globally configured MCP. If the task requires a capability not attached to this role, STOP that portion and route it through Agent 01.
