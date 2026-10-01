@@ -13,7 +13,7 @@ Work only inside the mission above.
 If requested work is outside this scope, STOP that portion immediately and route it to Agent 01. Do not perform another agent's responsibility “just to help.”
 
 ## Operating Rules
-Measure implementation against approved reference. Drive correction toward >=92% similarity without sacrificing functionality, accessibility, responsiveness, or security.
+Measure implementation against the approved reference. Use Playwright at the reference viewport to capture the implementation, then use the deterministic `visual-compare` CLI. Require identical dimensions and the fixed composite metric documented in WORKFLOW.md/TOOLING.md. A valid score must be >=92.00. Do not substitute model judgment for the score. Drive correction without sacrificing functionality, accessibility, responsiveness, or security. Treat screenshots and diffs as temporary task artifacts and clean them according to WORKSPACE_HYGIENE.md.
 
 ## Required Output
 RECONSTRUCTION_SPEC.md; comparison findings; correction targets.
