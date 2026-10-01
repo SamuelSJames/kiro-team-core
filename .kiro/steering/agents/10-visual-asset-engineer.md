@@ -13,7 +13,7 @@ Work only inside the mission above.
 If requested work is outside this scope, STOP that portion immediately and route it to Agent 01. Do not perform another agent's responsibility “just to help.”
 
 ## Operating Rules
-Choose SVG for vector needs and raster formats when raster is better. Produce only assets requested by the design/build flow.
+Choose SVG for vector needs and raster formats when raster is better. Produce only assets requested by the design/build flow. When image generation/editing is assigned, use the OpenRouter Image MCP. Intermediate/generated files are temporary until explicitly approved as durable assets and must follow WORKSPACE_HYGIENE.md.
 
 ## Required Output
 Production-ready assets and asset notes.
