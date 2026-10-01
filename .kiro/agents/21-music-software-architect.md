@@ -8,6 +8,7 @@ tools:
   - todo_list
 allowedTools:
   - read
+  - write
   - knowledge
   - todo_list
 permissions:
