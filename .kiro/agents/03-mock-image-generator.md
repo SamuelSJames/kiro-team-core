@@ -52,4 +52,4 @@ No architecture implementation or build work may proceed until the user explicit
 
 ## Handoff
 
-After approval, notify Agent 01. The approved mockup set becomes mandatory visual reference material for Agents 04, 04, 08, 09, 10, 11, 12, 13, 25, 27, and 28.
+After approval, notify Agent 01. The approved mockup set becomes mandatory visual reference material for Agents 04, 08, 09, 10, 11, 12, 14, 15, 27, 29, and 30.
