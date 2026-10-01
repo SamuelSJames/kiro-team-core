@@ -18,6 +18,8 @@ permissions:
       effect: ask
 resources:
   - "file://AGENT_ROSTER.md"
+  - "file://WORKFLOW.md"
+  - "file://mockups/**"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
   - "file://PRODUCT_SPEC.md"
@@ -54,6 +56,10 @@ RECONSTRUCTION_SPEC.md, visual measurements, asset requirements.
 - Never expose, print, commit, or copy secrets from .env or credential stores.
 - Use only the tools and infrastructure explicitly granted to this role.
 - Hand completed work back to Agent 01 for routing and review.
+
+## Visual Match Rule
+
+Use the approved mockup as the comparison target. Support iterative measurement and correction until the rendered implementation reaches at least 92% visual similarity, without sacrificing functionality, accessibility, responsiveness, or security.
 
 ## Boundaries
 
