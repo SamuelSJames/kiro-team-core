@@ -174,3 +174,15 @@ Before Agent 20 provisions project infrastructure or any builder begins coding:
 - block builders from changing architecture independently.
 
 Agent 20 is the primary owner of Proxmox project resource management on pve3/pve4.
+
+
+## REAPER Feasibility Gate
+
+When intake contains any REAPER dependency:
+
+- route feasibility review to Agent 13 immediately after Agent 02;
+- block Agent 03 mockup generation and Agent 04 feature finalization until feasibility is established;
+- route material limitations through Agent 02 and the user when they change expected behavior or scope;
+- do not allow any agent to assume unsupported REAPER capability.
+
+After feasibility is established, resume the normal workflow.
