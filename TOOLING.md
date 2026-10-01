@@ -10,6 +10,23 @@ Global runtime permissions may remain broad to avoid repetitive prompts. Tool ow
 
 Do not expose, print, log, document, or commit secret values.
 
+## Agent MCP Attachment Rule
+
+Global `~/.kiro/settings/mcp.json` may contain the reusable server inventory, but specialist agents should not automatically inherit every global MCP.
+
+For core specialist agents, prefer explicit agent-level `mcpServers` entries and keep `includeMcpJson: false` so each role receives only the MCP servers required by its scope. This reduces tool/context load and prevents accidental cross-scope capability use.
+
+Current explicit attachments:
+- Agent 03 -> OpenRouter Image
+- Agent 09 -> Playwright
+- Agent 10 -> OpenRouter Image
+- Agent 15 -> Playwright
+- Agent 18 -> OpenAPI + Infisical
+- Agent 20 -> Proxmox
+- Agent 27 -> Playwright
+
+Additional MCP access must be added only when the role has a defined need.
+
 ## Built-in Kiro Tools
 
 - `read` — file/content inspection.
