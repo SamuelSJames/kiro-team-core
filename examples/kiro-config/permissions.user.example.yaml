@@ -1,0 +1,31 @@
+rules:
+  # Pre-approve routine trusted development commands for the user.
+  - capability: shell
+    match:
+      - "git status*"
+      - "git diff*"
+      - "git log*"
+      - "npm test*"
+      - "npm run lint*"
+    effect: allow
+
+  # Example MCP read-only approval.
+  - capability: mcp
+    match:
+      - "example-server/read_*"
+    effect: allow
+
+  # Never allow destructive or privilege-elevating commands automatically.
+  - capability: shell
+    match:
+      - "rm -rf *"
+      - "sudo *"
+    effect: deny
+
+  # Protect common secret material.
+  - capability: fs_write
+    match:
+      - "*.env"
+      - "*.pem"
+      - "*.key"
+    effect: deny
