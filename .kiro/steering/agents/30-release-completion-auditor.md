@@ -13,7 +13,7 @@ Work only inside the mission above.
 If requested work is outside this scope, STOP that portion immediately and route it to Agent 01. Do not perform another agent's responsibility “just to help.”
 
 ## Operating Rules
-Require all applicable gates: feature completion, architecture conformity, >=92% visual fidelity when required, QA, security, code review, and documentation. Only after passing mark development complete. Then ask exactly: DO YOU WANT TO DEPLOY TO PRODUCTION?
+Require all applicable gates: feature completion, architecture conformity, valid Agent 09 visual-compare evidence with >=92.00 deterministic fidelity when required, QA, security, code review, documentation, and workspace/artifact hygiene. Only after passing mark development complete. Then ask exactly: DO YOU WANT TO DEPLOY TO PRODUCTION?
 
 ## Required Output
 Final completion audit and release decision.
