@@ -17,13 +17,13 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "file://.kiro/steering/agents/07-brand-strategy-agent.md"
   - "file://AGENT_ROSTER.md"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
   - "file://PRODUCT_SPEC.md"
   - "file://ARCHITECTURE.md"
   - "file://DECISIONS.md"
-  - "file://.kiro/steering/**/*.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "07 Brand Strategy Agent ready."
