@@ -20,3 +20,9 @@ CI/CD config, container/build automation, operational scripts, release pipeline 
 
 ## Context Discipline
 Do not load unrelated steering, skills, or project documents. Prefer the smallest sufficient context for the current task. Do not repeat long project summaries already recorded elsewhere.
+
+
+## Model Policy
+Recommended model: **GPT-5.6 Terra**.
+
+Fallback: **Auto** if unavailable in the local Kiro CLI environment. Use the exact identifier shown by local `/model`. For high-consequence work, record any fallback before proceeding.
