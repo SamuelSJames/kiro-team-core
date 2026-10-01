@@ -20,6 +20,8 @@ permissions:
 resources:
   - "file://.kiro/steering/agents/15-frontend-engineer.md"
   - "file://AGENT_ROSTER.md"
+  - "file://TOOLING.md"
+  - "file://WORKSPACE_HYGIENE.md"
   - "file://WORKFLOW.md"
   - "file://mockups/**"
   - "file://INTAKE.md"
