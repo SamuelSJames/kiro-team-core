@@ -1,0 +1,8 @@
+# Example only. Promote to <workspace>/.kiroignore after review.
+
+.env
+.env.*
+**/*.pem
+**/*.key
+secrets/
+private/
