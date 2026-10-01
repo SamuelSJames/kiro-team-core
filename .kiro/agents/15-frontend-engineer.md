@@ -64,7 +64,7 @@ When a mockup is approved, implement against it as the visual source of truth. C
 
 ## Boundaries
 
-Must follow Agents 04/04/06/08 outputs, not redesign architecture, and not approve its own work.
+Must follow Agents 04/14/05/08 outputs, not redesign architecture, and not approve its own work.
 
 ## Completion
 
