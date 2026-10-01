@@ -19,6 +19,7 @@ permissions:
       effect: ask
 resources:
   - "file://AGENT_ROSTER.md"
+  - "file://WORKFLOW.md"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
   - "file://PRODUCT_SPEC.md"
@@ -55,6 +56,10 @@ INFRASTRUCTURE.md, provisioning scripts, environment records.
 - Never expose, print, commit, or copy secrets from .env or credential stores.
 - Use only the tools and infrastructure explicitly granted to this role.
 - Hand completed work back to Agent 01 for routing and review.
+
+## Default Development Environment
+
+pve3 and pve4 are the default development/build environment for projects unless the intake explicitly specifies another environment. Provision only what the project needs and keep development resources reproducible and identifiable.
 
 ## Boundaries
 
