@@ -53,3 +53,19 @@ Research is a bounded support function and is invoked at four checkpoints:
    - Before final completion audit, Research verifies critical external assumptions that could have changed during development.
 
 Research must always return findings to the owning agent. Research does not own product scope, architecture, integrations, or release decisions.
+
+
+## SYSTEM DESIGN GATE
+
+After the numbered feature list is approved and before provisioning or coding:
+
+1. The Technical Architect creates the full System Design Package.
+2. Research validates unresolved technical assumptions.
+3. The Technical Architect finalizes the architecture.
+4. SYSTEM_DESIGN.md and the Mermaid architecture diagram become implementation baselines.
+5. Agent 20 provisions the Proxmox development environment from that design.
+6. Builders begin only after the required development environment exists.
+
+If any builder finds that the design cannot support implementation, the affected work stops and returns through Agent 01 to the Technical Architect.
+
+Agent 20 owns ongoing Proxmox project resource management on pve3/pve4 during development.
