@@ -7,10 +7,14 @@ tools:
   - knowledge
   - todo_list
   - shell
+  - "@openapi"
+  - "@infisical"
 allowedTools:
   - read
   - knowledge
   - todo_list
+  - "@openapi"
+  - "@infisical"
 permissions:
   rules:
     - capability: fs_write
