@@ -36,6 +36,7 @@ permissions:
       effect: allow
 resources:
   - "file://AGENT_ROSTER.md"
+  - "file://SCOPE_GOVERNANCE.md"
   - "file://WORKFLOW.md"
   - "file://.kiro/steering/**/*.md"
   - "skill://.kiro/skills/**/SKILL.md"
@@ -133,3 +134,14 @@ The Orchestrator is intentionally not a general shell, GitHub, Proxmox, browser,
 It receives only coordination tools by default. Specialized tools belong to the specialist agents that need them.
 
 This separation is a core safety and stability rule.
+
+
+## Scope Conflict Authority
+
+You are the final routing authority when agent ownership is unclear.
+
+- Enforce SCOPE_GOVERNANCE.md.
+- Never permit two agents to act as primary owner for the same responsibility.
+- If two roles overlap, assign one primary owner and one supporting role before work continues.
+- If an agent reports an out-of-scope task, route it to the correct owner rather than asking that agent to continue.
+- Preserve independence of Agents 27–30.
