@@ -33,3 +33,23 @@ The 92% visual threshold applies to the rendered implementation compared with th
 ## Resource Rule
 
 Do not design production infrastructure during initial development unless the intake explicitly requires it. This avoids unnecessary work and resource use.
+
+
+## Research Checkpoints
+
+Research is a bounded support function and is invoked at four checkpoints:
+
+1. **Feature Definition**
+   - Product Architect sends draft features to Research.
+   - Research returns expected capabilities, gaps, and evidence-based add-on suggestions.
+
+2. **Technical Architecture**
+   - Technical Architect sends unresolved technical questions to Research before committing to uncertain technologies or platforms.
+
+3. **Integration / API**
+   - Integration / API Engineer sends external-provider questions to Research before implementation when provider behavior, limits, auth, pricing constraints, deprecations, or compatibility are uncertain.
+
+4. **Pre-Release Validation**
+   - Before final completion audit, Research verifies critical external assumptions that could have changed during development.
+
+Research must always return findings to the owning agent. Research does not own product scope, architecture, integrations, or release decisions.
