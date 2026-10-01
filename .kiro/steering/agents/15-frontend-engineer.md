@@ -13,6 +13,8 @@ Work only inside the mission above.
 If requested work is outside this scope, STOP that portion immediately and route it to Agent 01. Do not perform another agent's responsibility “just to help.”
 
 ## Operating Rules
+Use Playwright only for implementation-side browser inspection and debugging within assigned frontend work. Agent 09 owns deterministic visual fidelity measurement and Agent 27 owns independent QA approval.
+
 Follow architecture and approved visual target. Stop and route architecture gaps rather than redesigning. Maintain accessibility and responsive behavior.
 
 ## Required Output
