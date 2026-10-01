@@ -10,6 +10,7 @@ tools:
   - "@playwright"
 allowedTools:
   - read
+  - write
   - knowledge
   - todo_list
   - shell
