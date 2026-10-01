@@ -18,13 +18,13 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "file://.kiro/steering/agents/12-3d-interactive-visual-engineer.md"
   - "file://AGENT_ROSTER.md"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
   - "file://PRODUCT_SPEC.md"
   - "file://ARCHITECTURE.md"
   - "file://DECISIONS.md"
-  - "file://.kiro/steering/**/*.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "12 3D / Interactive Visual Engineer ready."
