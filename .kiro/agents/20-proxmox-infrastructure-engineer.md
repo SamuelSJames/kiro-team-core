@@ -7,10 +7,12 @@ tools:
   - knowledge
   - todo_list
   - shell
+  - "@proxmox"
 allowedTools:
   - read
   - knowledge
   - todo_list
+  - "@proxmox"
 permissions:
   rules:
     - capability: fs_write
