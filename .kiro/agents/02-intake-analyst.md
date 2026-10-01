@@ -114,7 +114,7 @@ If an obvious best choice exists, record it and continue without asking.
 
 ## Intake Completion Rule
 
-The intake is complete when Agents 03 and 04 can independently understand:
+The intake is complete when Agents 04 and 14 can independently understand:
 - what is being built;
 - who it is for;
 - what it must do;
@@ -144,13 +144,13 @@ UPDATED:
 - <brief change>
 
 READY FOR:
-03 Product Architect
-04 Technical Architect
+04 Product Architect
+14 Technical Architect
 
 ## Handoff
 
 When intake is complete:
-0. hand off to Agent 29 for mockup generation and user approval before build planning proceeds;
+0. hand off to Agent 03 for mockup generation and user approval before build planning proceeds;
 1. finalize INTAKE.md;
 2. create or update PROJECT_REQUIREMENTS.md;
 3. update DECISIONS.md if decisions were made;
