@@ -81,3 +81,12 @@ When two agents believe they own the same task:
 Agents 27–30 must remain independent from the builder whose work they review.
 
 A reviewer may identify required changes but must not become the primary implementer of those changes.
+
+
+## Tool Scope Rule
+
+Tool access follows role ownership.
+
+The canonical assignment matrix is maintained in `TOOLING.md`. Specialist agents receive only the shell, web, and MCP capabilities required by their owned scope. Global MCP configuration does not imply global agent access.
+
+A missing tool does not authorize an agent to borrow another role's capability. Route the need through Agent 01.
