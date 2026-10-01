@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "personal-example": {
+      "command": "uvx",
+      "args": ["example-mcp-server"],
+      "env": {
+        "EXAMPLE_TOKEN": "${EXAMPLE_TOKEN}"
+      },
+      "disabled": true,
+      "autoApprove": [
+        "safe_read_tool"
+      ],
+      "disabledTools": []
+    }
+  }
+}
