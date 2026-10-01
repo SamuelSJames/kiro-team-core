@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "example-kiro-power",
+  "version": "1.0.0",
+  "description": "Example Kiro Power package for dynamically loaded specialist tools and skills.",
+  "author": {
+    "name": "SnS Network Solutions"
+  },
+  "keywords": [
+    "example",
+    "specialist"
+  ],
+  "license": "MIT"
+}
