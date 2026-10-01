@@ -18,6 +18,7 @@ permissions:
       effect: ask
 resources:
   - "file://AGENT_ROSTER.md"
+  - "file://WORKFLOW.md"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
   - "file://PRODUCT_SPEC.md"
@@ -54,6 +55,13 @@ ARCHITECTURE.md, TECH_STACK.md, INTERFACES.md, DECISIONS.md.
 - Never expose, print, commit, or copy secrets from .env or credential stores.
 - Use only the tools and infrastructure explicitly granted to this role.
 - Hand completed work back to Agent 01 for routing and review.
+
+## Development Architecture Rule
+
+- Default development target: authorized Proxmox environment on pve3/pve4.
+- Produce one development system design by default.
+- Do not design AWS, Linode/Akamai, or other production architecture during initial development unless the intake explicitly requires it.
+- Production architecture begins only after project completion and explicit user approval to deploy.
 
 ## Boundaries
 
