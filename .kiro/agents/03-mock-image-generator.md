@@ -25,6 +25,8 @@ permissions:
 resources:
   - "file://.kiro/steering/agents/03-mock-image-generator.md"
   - "file://AGENT_ROSTER.md"
+  - "file://TOOLING.md"
+  - "file://WORKSPACE_HYGIENE.md"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
 mcpServers:
