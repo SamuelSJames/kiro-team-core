@@ -6,9 +6,9 @@ tools:
   - write
   - knowledge
   - todo_list
-  - shell
 allowedTools:
   - read
+  - write
   - knowledge
   - todo_list
 permissions:
