@@ -11,8 +11,10 @@ tools:
   - "@infisical"
 allowedTools:
   - read
+  - write
   - knowledge
   - todo_list
+  - shell
   - "@openapi"
   - "@infisical"
 permissions:
