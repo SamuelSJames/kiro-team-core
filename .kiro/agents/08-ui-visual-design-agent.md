@@ -17,6 +17,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "file://.kiro/steering/agents/08-ui-visual-design-agent.md"
   - "file://AGENT_ROSTER.md"
   - "file://WORKFLOW.md"
   - "file://mockups/**"
@@ -25,7 +26,6 @@ resources:
   - "file://PRODUCT_SPEC.md"
   - "file://ARCHITECTURE.md"
   - "file://DECISIONS.md"
-  - "file://.kiro/steering/**/*.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "08 UI / Visual Design Agent ready."
