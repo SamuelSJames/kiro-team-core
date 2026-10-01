@@ -19,10 +19,10 @@ permissions:
         - "DECISIONS.md"
       effect: allow
 resources:
+  - "file://.kiro/steering/agents/03-mock-image-generator.md"
   - "file://AGENT_ROSTER.md"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
-  - "file://.kiro/steering/**/*.md"
 includeMcpJson: true
 includePowers: true
 welcomeMessage: "03 Mock Image Generator ready."
