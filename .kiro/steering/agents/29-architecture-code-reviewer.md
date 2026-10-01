@@ -23,6 +23,6 @@ Do not load unrelated steering, skills, or project documents. Prefer the smalles
 
 
 ## Model Policy
-Recommended model: **Claude Opus 5**.
+Recommended model: **claude-opus-5**.
 
-Fallback: **Auto** if unavailable in the local Kiro CLI environment. Use the exact identifier shown by local `/model`. For high-consequence work, record any fallback before proceeding.
+Fallback: **auto** if unavailable in the local Kiro CLI environment. Use the exact identifier shown by local `/model`. For high-consequence work, record any fallback before proceeding.
