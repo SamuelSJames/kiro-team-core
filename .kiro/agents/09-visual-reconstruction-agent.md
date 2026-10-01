@@ -7,11 +7,13 @@ tools:
   - knowledge
   - todo_list
   - shell
+  - "@playwright"
 allowedTools:
   - read
   - knowledge
   - todo_list
   - shell
+  - "@playwright"
 permissions:
   rules:
     - capability: fs_write
