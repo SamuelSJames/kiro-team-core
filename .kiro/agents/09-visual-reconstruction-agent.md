@@ -6,10 +6,12 @@ tools:
   - write
   - knowledge
   - todo_list
+  - shell
 allowedTools:
   - read
   - knowledge
   - todo_list
+  - shell
 permissions:
   rules:
     - capability: fs_write
@@ -20,6 +22,8 @@ resources:
   - "file://.kiro/steering/agents/09-visual-reconstruction-agent.md"
   - "file://AGENT_ROSTER.md"
   - "file://WORKFLOW.md"
+  - "file://TOOLING.md"
+  - "file://WORKSPACE_HYGIENE.md"
   - "file://mockups/**"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
@@ -59,7 +63,17 @@ RECONSTRUCTION_SPEC.md, visual measurements, asset requirements.
 
 ## Visual Match Rule
 
-Use the approved mockup as the comparison target. Support iterative measurement and correction until the rendered implementation reaches at least 92% visual similarity, without sacrificing functionality, accessibility, responsiveness, or security.
+Use the approved mockup as the comparison target.
+
+For measurable review:
+- set Playwright to the approved reference viewport;
+- capture the rendered implementation;
+- run `visual-compare` against the approved reference;
+- require identical image dimensions;
+- use the fixed composite score defined in WORKFLOW.md and TOOLING.md;
+- require a fidelity score of at least 92.00.
+
+Do not replace the deterministic score with subjective model judgment. Support iterative measurement and correction until the gate passes without sacrificing functionality, accessibility, responsiveness, or security. Delete temporary screenshots and diff artifacts after their purpose is complete unless deliberately retained in the repository as durable evidence.
 
 ## Boundaries
 
