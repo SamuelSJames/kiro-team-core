@@ -29,11 +29,11 @@ permissions:
         - "infrastructure/**"
       effect: deny
 resources:
+  - "file://.kiro/steering/agents/04-product-architect.md"
   - "file://AGENT_ROSTER.md"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
   - "file://DECISIONS.md"
-  - "file://.kiro/steering/**/*.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "04 Product Architect ready."
