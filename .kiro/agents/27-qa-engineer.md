@@ -29,7 +29,14 @@ resources:
   - "file://PRODUCT_SPEC.md"
   - "file://ARCHITECTURE.md"
   - "file://DECISIONS.md"
-includeMcpJson: true
+mcpServers:
+  playwright:
+    command: "ssh"
+    args:
+      - "-T"
+      - "pve3"
+      - "pct exec 301 -- /opt/mcp/run-playwright.sh"
+includeMcpJson: false
 includePowers: false
 welcomeMessage: "27 QA Engineer ready."
 ---
