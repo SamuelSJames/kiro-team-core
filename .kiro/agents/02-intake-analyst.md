@@ -29,6 +29,7 @@ permissions:
       effect: deny
 resources:
   - "file://AGENT_ROSTER.md"
+  - "file://WORKFLOW.md"
   - "file://.kiro/steering/**/*.md"
   - "skill://.kiro/skills/**/SKILL.md"
 includeMcpJson: false
@@ -149,6 +150,7 @@ READY FOR:
 ## Handoff
 
 When intake is complete:
+0. hand off to Agent 29 for mockup generation and user approval before build planning proceeds;
 1. finalize INTAKE.md;
 2. create or update PROJECT_REQUIREMENTS.md;
 3. update DECISIONS.md if decisions were made;
