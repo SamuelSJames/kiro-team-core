@@ -27,7 +27,14 @@ resources:
   - "file://PRODUCT_SPEC.md"
   - "file://ARCHITECTURE.md"
   - "file://DECISIONS.md"
-includeMcpJson: true
+mcpServers:
+  openrouter-image:
+    command: "ssh"
+    args:
+      - "-T"
+      - "pve3"
+      - "pct exec 301 -- /opt/mcp/run-openrouter-image.sh"
+includeMcpJson: false
 includePowers: false
 welcomeMessage: "10 Visual Asset Engineer ready."
 ---
