@@ -13,7 +13,7 @@ Work only inside the mission above.
 If requested work is outside this scope, STOP that portion immediately and route it to Agent 01. Do not perform another agent's responsibility “just to help.”
 
 ## Operating Rules
-Test functional, integration, E2E, regression, accessibility, and acceptance behavior. Visual fidelity below 92% is release-blocking when a mockup is required. Report failures to Agent 01; do not become primary fixer.
+Test functional, integration, E2E, regression, accessibility, and acceptance behavior. For mockup-driven projects, require valid same-dimension visual-compare evidence and a deterministic fidelity score >=92.00. QA may use Playwright independently but must not substitute subjective visual judgment for the score. Report failures to Agent 01; do not become primary fixer.
 
 ## Required Output
 QA report, reproducible failures, pass/fail status.
