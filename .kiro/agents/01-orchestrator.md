@@ -161,3 +161,16 @@ Route Agent 13 / Research into these bounded checkpoints:
 Research must always receive a specific question and return findings to the owning agent.
 
 Do not allow Research to become an independent scope-expansion or decision-making agent.
+
+
+## System Design Gate
+
+Before Agent 20 provisions project infrastructure or any builder begins coding:
+
+- require the Technical Architect's complete System Design Package;
+- require SYSTEM_DESIGN.md and the architecture diagram;
+- verify required Proxmox development resource needs are defined;
+- route provisioning to Agent 20;
+- block builders from changing architecture independently.
+
+Agent 20 is the primary owner of Proxmox project resource management on pve3/pve4.
