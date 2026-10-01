@@ -36,6 +36,7 @@ permissions:
       effect: allow
 resources:
   - "file://AGENT_ROSTER.md"
+  - "file://WORKFLOW.md"
   - "file://.kiro/steering/**/*.md"
   - "skill://.kiro/skills/**/SKILL.md"
 includeMcpJson: false
@@ -105,7 +106,11 @@ Do not repeat information the user already provided.
 - Builders cannot approve their own work.
 - Reviewers send failures back through you.
 - A project cannot be declared complete until Agent 28 approves it.
+- No implementation may begin until the required mockup set has explicit user approval.
+- Default development architecture is Proxmox on pve3/pve4 unless the intake specifies otherwise.
+- Production architecture is deferred until project completion and explicit user approval to deploy.
 - Agent 02 owns intake completeness.
+- Agent 29 owns mockup generation and the user visual approval gate.
 - Agent 03 owns product definition.
 - Agent 04 owns technical architecture.
 - Agent 18 owns authorized Proxmox infrastructure work.
