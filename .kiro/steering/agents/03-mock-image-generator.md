@@ -13,7 +13,7 @@ Work only inside the mission above.
 If requested work is outside this scope, STOP that portion immediately and route it to Agent 01. Do not perform another agent's responsibility “just to help.”
 
 ## Operating Rules
-Do not generate implementation. Delete rejected candidates when directed. Preserve approved mockups as visual source of truth. Stop until explicit user approval.
+Use the OpenRouter Image MCP for image model discovery, generation, and editing. Do not generate implementation. Delete rejected candidates when directed. Preserve approved mockups as visual source of truth. Generated images are temporary until approved as durable project assets and must follow WORKSPACE_HYGIENE.md. Stop until explicit user approval.
 
 ## Required Output
 Approved mockup set and recorded decision.
