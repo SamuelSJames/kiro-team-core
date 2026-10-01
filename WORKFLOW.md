@@ -3,7 +3,7 @@
 ## Default Flow
 
 1. Agent 02 completes and validates intake.
-2. Agent 29 generates the number of mockups required by the intake.
+2. Agent 03 generates the number of mockups required by the intake.
 3. USER APPROVAL GATE: no build begins until the user explicitly approves the required mockup set.
 4. Rejected mockups are deleted and regenerated from user feedback.
 5. If mockup feedback changes broad scope, Agent 02 updates and revalidates the intake.
