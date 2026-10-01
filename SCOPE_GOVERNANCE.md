@@ -41,7 +41,7 @@ If ownership is unclear, Agent 01 decides the owner before work continues.
 17 Database Engineer — schema, migrations, persistence, query design.
 18 Integration / API Engineer — third-party APIs, OAuth, webhooks, external service integration, MCP integration.
 19 DevOps / CI-CD Engineer — build pipelines, containers, CI/CD, deployment automation.
-20 Proxmox Infrastructure Engineer — authorized Proxmox development infrastructure on pve3/pve4.
+20 Proxmox Infrastructure Engineer — sole primary owner of project resource management on authorized Proxmox development nodes pve3/pve4, including VM/LXC lifecycle, CPU, memory, storage, networking, snapshots, placement, capacity, and project resource inventory.
 21 Music Software Architect — music-software architecture only.
 22 DSP / Audio Engineer — audio processing and DSP implementation.
 23 MIDI Engineer — MIDI behavior, routing, mappings, timing.
