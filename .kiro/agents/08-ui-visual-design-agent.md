@@ -18,6 +18,8 @@ permissions:
       effect: ask
 resources:
   - "file://AGENT_ROSTER.md"
+  - "file://WORKFLOW.md"
+  - "file://mockups/**"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
   - "file://PRODUCT_SPEC.md"
@@ -54,6 +56,10 @@ UI_SPEC.md, DESIGN_TOKENS.md, COMPONENT_VISUALS.md.
 - Never expose, print, commit, or copy secrets from .env or credential stores.
 - Use only the tools and infrastructure explicitly granted to this role.
 - Hand completed work back to Agent 01 for routing and review.
+
+## Approved Mockup Rule
+
+When an approved mockup exists, treat it as the visual source of truth. Do not redesign it without an approved scope/design change.
 
 ## Boundaries
 
