@@ -99,3 +99,7 @@ Agent numbers and names are permanent identifiers. Roles may evolve, but existin
 ## Core Operating Principle
 
 Builders do not approve their own work. Review and completion authority remains with independent quality agents.
+
+
+29. **29 — Mock Image Generator**
+   - Generates project mockup images from the completed intake, using the configured OpenRouter image model. The number of mockups depends on the intake. Rejected mockups are deleted and regenerated from user feedback. Approved mockups become the visual source of truth.
