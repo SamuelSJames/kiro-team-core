@@ -69,3 +69,23 @@ After the numbered feature list is approved and before provisioning or coding:
 If any builder finds that the design cannot support implementation, the affected work stops and returns through Agent 01 to the Technical Architect.
 
 Agent 20 owns ongoing Proxmox project resource management on pve3/pve4 during development.
+
+
+## REAPER FEASIBILITY GATE
+
+This gate is mandatory for any project that depends on REAPER behavior, REAPER control, REAPER data, or REAPER synchronization.
+
+After Agent 02 completes intake and before mockup generation or feature definition:
+
+1. Agent 13 receives the requested REAPER capabilities from the approved intake.
+2. Agent 13 researches current REAPER capabilities and relevant integration methods, including ReaScript, OSC, Web Remote, JSFX, extensions, regions, markers, transport state, project data access, and other applicable mechanisms.
+3. Each requested capability is classified as:
+   - POSSIBLE;
+   - POSSIBLE WITH LIMITATIONS;
+   - REQUIRES WORKAROUND OR CUSTOM EXTENSION;
+   - NOT CURRENTLY PRACTICAL.
+4. Material limitations and required workarounds are recorded in RESEARCH.md and DECISIONS.md.
+5. Agent 01 routes any material product-impacting limitation back through Agent 02 and, when needed, to the user.
+6. Only after feasibility is sufficiently established may Agent 03 generate mockups and Agent 04 define the final feature list.
+
+Do not design, approve, or implement a REAPER-dependent feature based on assumption alone.
