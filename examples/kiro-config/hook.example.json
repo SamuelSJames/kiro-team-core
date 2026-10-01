@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Lint TypeScript after save",
+      "description": "Example deterministic post-save quality hook.",
+      "trigger": "PostFileSave",
+      "matcher": "\\.(ts|tsx)$",
+      "action": {
+        "type": "command",
+        "command": "npx eslint --fix"
+      }
+    }
+  ]
+}
