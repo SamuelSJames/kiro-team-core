@@ -20,3 +20,9 @@ Final completion audit and release decision.
 
 ## Context Discipline
 Do not load unrelated steering, skills, or project documents. Prefer the smallest sufficient context for the current task. Do not repeat long project summaries already recorded elsewhere.
+
+
+## Model Policy
+Recommended model: **Claude Opus 5**.
+
+Fallback: **Auto** if unavailable in the local Kiro CLI environment. Use the exact identifier shown by local `/model`. For high-consequence work, record any fallback before proceeding.
