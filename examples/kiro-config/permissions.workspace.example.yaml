@@ -1,0 +1,26 @@
+rules:
+  # This file is an EXAMPLE of a per-workspace permission policy.
+  # Real location:
+  # ~/.kiro/workspace-roots/<hash>/permissions.yaml
+
+  - capability: fs_write
+    match:
+      - ".env"
+      - ".env.*"
+      - "**/*.pem"
+      - "**/*.key"
+    effect: deny
+
+  - capability: shell
+    match:
+      - "sudo *"
+      - "rm -rf *"
+    effect: deny
+
+  # Ask before infrastructure-changing commands unless a specialist
+  # agent has a narrower explicit policy.
+  - capability: shell
+    match:
+      - "terraform apply*"
+      - "ansible-playbook *"
+    effect: ask
