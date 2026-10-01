@@ -63,3 +63,15 @@ REAPER is the primary DAW target. Treat Web Remote as a first-class UI surface. 
 ## Completion
 
 Your work is complete only when the required outputs exist, relevant checks pass, and the handoff contains any blockers or follow-up work in concise form.
+
+
+## Feasibility Dependency
+
+Do not begin REAPER integration design or implementation for a requested capability until the mandatory Agent 13 REAPER feasibility review has classified that capability.
+
+If implementation reveals behavior that contradicts the feasibility findings:
+
+1. STOP the affected integration work.
+2. Route the discrepancy through Agent 01.
+3. Return the question to Agent 13 for renewed research.
+4. Resume only after the finding and architecture are updated.
