@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "example-local": {
+      "command": "npx",
+      "args": ["-y", "example-mcp-server"],
+      "env": {
+        "EXAMPLE_API_KEY": "${EXAMPLE_API_KEY}"
+      },
+      "disabled": true,
+      "autoApprove": [
+        "read_only_tool"
+      ],
+      "disabledTools": [
+        "dangerous_write_tool"
+      ]
+    },
+    "example-remote": {
+      "url": "https://example.invalid/mcp",
+      "headers": {
+        "Authorization": "Bearer ${EXAMPLE_REMOTE_TOKEN}"
+      },
+      "disabled": true,
+      "autoApprove": [],
+      "disabledTools": []
+    }
+  }
+}
