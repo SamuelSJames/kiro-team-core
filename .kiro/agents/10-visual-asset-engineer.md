@@ -7,10 +7,12 @@ tools:
   - knowledge
   - todo_list
   - shell
+  - "@openrouter-image"
 allowedTools:
   - read
   - knowledge
   - todo_list
+  - "@openrouter-image"
 permissions:
   rules:
     - capability: fs_write
