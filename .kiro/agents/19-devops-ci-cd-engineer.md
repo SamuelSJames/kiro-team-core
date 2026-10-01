@@ -7,10 +7,14 @@ tools:
   - knowledge
   - todo_list
   - shell
+  - "@infisical"
 allowedTools:
   - read
+  - write
   - knowledge
   - todo_list
+  - shell
+  - "@infisical"
 permissions:
   rules:
     - capability: fs_write
@@ -25,6 +29,13 @@ resources:
   - "file://PRODUCT_SPEC.md"
   - "file://ARCHITECTURE.md"
   - "file://DECISIONS.md"
+mcpServers:
+  infisical:
+    command: "ssh"
+    args:
+      - "-T"
+      - "ws"
+      - "~/.local/bin/run-infisical-mcp.sh"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "19 DevOps / CI-CD Engineer ready."
