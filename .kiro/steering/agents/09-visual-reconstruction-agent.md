@@ -20,3 +20,9 @@ RECONSTRUCTION_SPEC.md; comparison findings; correction targets.
 
 ## Context Discipline
 Do not load unrelated steering, skills, or project documents. Prefer the smallest sufficient context for the current task. Do not repeat long project summaries already recorded elsewhere.
+
+
+## Model Policy
+Recommended model: **GPT-5.6 Sol**.
+
+Fallback: **Auto** if the recommended model is unavailable in the local Kiro CLI environment. Use the exact model identifier exposed by the local `/model` command when configuring this agent. Do not silently substitute a weaker model for high-consequence review, architecture, infrastructure, DSP, or release decisions without recording the fallback.
