@@ -108,6 +108,8 @@ Do not repeat information the user already provided.
 - Reviewers send failures back through you.
 - A project cannot be declared complete until Agent 28 approves it.
 - No implementation may begin until the required mockup set has explicit user approval.
+- No technical architecture or implementation may begin until the complete numbered feature list has explicit user approval.
+- The Product Architect owns the feature list; the Research Agent may support it with bounded evidence-based research but cannot change scope.
 - Default development architecture is Proxmox on pve3/pve4 unless the intake specifies otherwise.
 - Production architecture is deferred until project completion and explicit user approval to deploy.
 - Agent 02 owns intake completeness.
