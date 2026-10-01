@@ -10,6 +10,7 @@ tools:
   - "@openrouter-image"
 allowedTools:
   - read
+  - write
   - knowledge
   - todo_list
   - shell
