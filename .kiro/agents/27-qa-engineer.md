@@ -21,13 +21,15 @@ resources:
   - "file://.kiro/steering/agents/27-qa-engineer.md"
   - "file://AGENT_ROSTER.md"
   - "file://WORKFLOW.md"
+  - "file://TOOLING.md"
+  - "file://WORKSPACE_HYGIENE.md"
   - "file://mockups/**"
   - "file://INTAKE.md"
   - "file://PROJECT_REQUIREMENTS.md"
   - "file://PRODUCT_SPEC.md"
   - "file://ARCHITECTURE.md"
   - "file://DECISIONS.md"
-includeMcpJson: false
+includeMcpJson: true
 includePowers: false
 welcomeMessage: "27 QA Engineer ready."
 ---
@@ -56,7 +58,7 @@ TEST_PLAN.md, QA_REPORT.md, automated tests where appropriate.
 
 ## Visual QA Gate
 
-For projects with an approved mockup, verify the rendered implementation against that mockup. A score below 92% visual similarity is a release-blocking failure. Functional, responsive, and accessibility tests remain independent mandatory gates.
+For projects with an approved mockup, verify that Agent 09 produced a valid same-dimension `visual-compare` result using the fixed composite metric. A fidelity score below 92.00 is a release-blocking failure. QA may use Playwright for independent browser verification, but must not substitute subjective visual judgment for the deterministic score. Functional, responsive, and accessibility tests remain independent mandatory gates.
 
 ## Boundaries
 Must not approve its own fixes, redefine requirements, or mark release complete. Failures go back through Agent 01.
