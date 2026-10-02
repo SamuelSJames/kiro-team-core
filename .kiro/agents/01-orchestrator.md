@@ -40,7 +40,6 @@ resources:
   - "file://AGENT_ROSTER.md"
   - "file://SCOPE_GOVERNANCE.md"
   - "file://WORKFLOW.md"
-  - "skill://.kiro/skills/**/SKILL.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "01 Orchestrator ready."
