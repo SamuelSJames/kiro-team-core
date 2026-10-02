@@ -20,16 +20,11 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/debugging-root-cause/SKILL.md"
-  - "skill://.kiro/skills/code-review/SKILL.md"
-  - "file://.kiro/steering/agents/29-architecture-code-reviewer.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://WORKFLOW.md"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
+  - "skill://../skills/debugging-root-cause/SKILL.md"
+  - "skill://../skills/code-review/SKILL.md"
+  - "file://../steering/agents/29-architecture-code-reviewer.md"
+  - "file://../AGENT_ROSTER.md"
+  - "file://../WORKFLOW.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "29 Architecture / Code Reviewer ready."
