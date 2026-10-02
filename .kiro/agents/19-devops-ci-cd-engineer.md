@@ -1,6 +1,7 @@
 ---
 name: "19-devops-ci-cd-engineer"
 description: "Creates repeatable build, test, packaging, and deployment pipelines."
+model: "gpt-5.6-terra"
 tools:
   - read
   - write
