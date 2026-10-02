@@ -1,6 +1,7 @@
 ---
 name: "30-release-completion-auditor"
 description: "Performs the final independent audit and is the only agent authorized to mark the project complete."
+model: "claude-opus-5"
 tools:
   - read
   - write
