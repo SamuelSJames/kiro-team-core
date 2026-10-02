@@ -18,3 +18,14 @@ Each skill has exactly one primary owner. Shared use is allowed only when the sk
 | repository-work-cycle | 19 DevOps / CI-CD Engineer | Builders/reviewers may use the procedure |
 | graphify-codebase-map | 26 Documentation / Knowledge Engineer | Agents 14, 15, 16, 17, 18, 27, 29 may use |
 | release-audit | 30 Release / Completion Auditor | No shared ownership |
+
+| frontend-implementation | 15 Frontend Engineer | Agents 27, 29 consume/inspect |
+| backend-implementation | 16 Backend Engineer | Agents 17, 18, 29 consume boundaries/contracts |
+| database-design | 17 Database Engineer | Agents 16, 29 consume/review |
+| debugging-root-cause | 27 QA Engineer | Builders 15–25 and Agent 29 may use methodology |
+| e2e-browser-testing | 27 QA Engineer | Agent 15 may run focused implementation checks |
+| security-audit | 28 Security Reviewer | Builders consume remediation requirements |
+| code-review | 29 Architecture / Code Reviewer | Builders may self-check; no shared review ownership |
+| ci-cd-pipeline | 19 DevOps / CI-CD Engineer | Agents 27/28 provide gate requirements |
+| web-3d-animation | 12 3D / Interactive Visual Engineer | Agents 08, 11, 15, 27 collaborate/consume |
+| spacing-layout-system | 08 UI / Visual Design | Agents 05, 09, 11, 12, 15 consume/apply |
