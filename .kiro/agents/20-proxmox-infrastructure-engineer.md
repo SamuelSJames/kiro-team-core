@@ -22,6 +22,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/proxmox-project-provision/SKILL.md"
   - "file://.kiro/steering/agents/20-proxmox-infrastructure-engineer.md"
   - "file://AGENT_ROSTER.md"
   - "file://TOOLING.md"
