@@ -22,28 +22,15 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/debugging-root-cause/SKILL.md"
-  - "skill://.kiro/skills/design-contract/SKILL.md"
-  - "skill://.kiro/skills/spacing-layout-system/SKILL.md"
-  - "skill://.kiro/skills/frontend-implementation/SKILL.md"
-  - "file://.kiro/steering/agents/15-frontend-engineer.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://TOOLING.md"
-  - "file://WORKSPACE_HYGIENE.md"
-  - "file://WORKFLOW.md"
-  - "file://mockups/**"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
-mcpServers:
-  playwright:
-    command: "ssh"
-    args:
-      - "-T"
-      - "pve3"
-      - "pct exec 301 -- /opt/mcp/run-playwright.sh"
+  - "skill://../skills/debugging-root-cause/SKILL.md"
+  - "skill://../skills/design-contract/SKILL.md"
+  - "skill://../skills/spacing-layout-system/SKILL.md"
+  - "skill://../skills/frontend-implementation/SKILL.md"
+  - "file://../steering/agents/15-frontend-engineer.md"
+  - "file://../AGENT_ROSTER.md"
+  - "file://../TOOLING.md"
+  - "file://../WORKSPACE_HYGIENE.md"
+  - "file://../WORKFLOW.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "15 Frontend Engineer ready."
