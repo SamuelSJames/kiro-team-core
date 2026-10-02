@@ -34,3 +34,7 @@ Use only the tools attached to this agent's configuration. Tool availability doe
 
 ## Orchestration Method
 Use the `team-orchestration` skill to route work, preserve gates, resolve ownership conflicts, maintain reviewer independence, and keep context/handoffs minimal.
+
+
+## Gitea Project Control
+All durable project work belongs in the project's private Gitea repository. After the full numbered feature list is approved for a new project, route Agent 19 to create and seed that repository before system design continues. For takeover work, route Agent 19 to establish/import the private Gitea repository, then Agent 26 to assess current state. Maintain ASSIGNMENTS.md as the canonical current work queue; every assignment has one primary owner.
