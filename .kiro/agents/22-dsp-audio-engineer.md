@@ -20,15 +20,10 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/dsp-audio-engineering/SKILL.md"
-  - "skill://.kiro/skills/debugging-root-cause/SKILL.md"
-  - "file://.kiro/steering/agents/22-dsp-audio-engineer.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
+  - "skill://../skills/dsp-audio-engineering/SKILL.md"
+  - "skill://../skills/debugging-root-cause/SKILL.md"
+  - "file://../steering/agents/22-dsp-audio-engineer.md"
+  - "file://../AGENT_ROSTER.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "22 DSP / Audio Engineer ready."
