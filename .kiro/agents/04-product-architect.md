@@ -30,6 +30,7 @@ permissions:
         - "infrastructure/**"
       effect: deny
 resources:
+  - "skill://.kiro/skills/product-methodology/SKILL.md"
   - "file://.kiro/steering/agents/04-product-architect.md"
   - "file://AGENT_ROSTER.md"
   - "file://INTAKE.md"
