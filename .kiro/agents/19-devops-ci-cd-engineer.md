@@ -22,6 +22,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/repository-work-cycle/SKILL.md"
   - "file://.kiro/steering/agents/19-devops-ci-cd-engineer.md"
   - "file://AGENT_ROSTER.md"
   - "file://TOOLING.md"
