@@ -18,6 +18,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/release-audit/SKILL.md"
   - "file://.kiro/steering/agents/30-release-completion-auditor.md"
   - "file://AGENT_ROSTER.md"
   - "file://WORKFLOW.md"
