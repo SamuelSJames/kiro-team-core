@@ -1,6 +1,7 @@
 ---
 name: "26-documentation-knowledge-engineer"
 description: "Keeps project knowledge accurate, concise, and usable by humans and agents."
+model: "gpt-5.6-luna"
 tools:
   - read
   - write
