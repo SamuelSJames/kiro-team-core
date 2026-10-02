@@ -20,15 +20,10 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/debugging-root-cause/SKILL.md"
-  - "skill://.kiro/skills/database-design/SKILL.md"
-  - "file://.kiro/steering/agents/17-database-engineer.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
+  - "skill://../skills/debugging-root-cause/SKILL.md"
+  - "skill://../skills/database-design/SKILL.md"
+  - "file://../steering/agents/17-database-engineer.md"
+  - "file://../AGENT_ROSTER.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "17 Database Engineer ready."
