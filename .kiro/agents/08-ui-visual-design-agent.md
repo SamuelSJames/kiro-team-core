@@ -18,6 +18,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/design-contract/SKILL.md"
   - "file://.kiro/steering/agents/08-ui-visual-design-agent.md"
   - "file://AGENT_ROSTER.md"
   - "file://WORKFLOW.md"
@@ -44,7 +45,7 @@ Layouts, typography, color, spacing, components, visual hierarchy, design tokens
 
 ## Required Outputs
 
-UI_SPEC.md, DESIGN_TOKENS.md, COMPONENT_VISUALS.md.
+UI_SPEC.md, DESIGN_TOKENS.md, COMPONENT_VISUALS.md, and project-root .design for UI projects.
 
 ## Operating Rules
 
