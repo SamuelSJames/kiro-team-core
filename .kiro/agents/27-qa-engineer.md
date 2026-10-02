@@ -22,27 +22,14 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/design-contract/SKILL.md"
-  - "skill://.kiro/skills/e2e-browser-testing/SKILL.md"
-  - "skill://.kiro/skills/debugging-root-cause/SKILL.md"
-  - "file://.kiro/steering/agents/27-qa-engineer.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://WORKFLOW.md"
-  - "file://TOOLING.md"
-  - "file://WORKSPACE_HYGIENE.md"
-  - "file://mockups/**"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
-mcpServers:
-  playwright:
-    command: "ssh"
-    args:
-      - "-T"
-      - "pve3"
-      - "pct exec 301 -- /opt/mcp/run-playwright.sh"
+  - "skill://../skills/design-contract/SKILL.md"
+  - "skill://../skills/e2e-browser-testing/SKILL.md"
+  - "skill://../skills/debugging-root-cause/SKILL.md"
+  - "file://../steering/agents/27-qa-engineer.md"
+  - "file://../AGENT_ROSTER.md"
+  - "file://../WORKFLOW.md"
+  - "file://../TOOLING.md"
+  - "file://../WORKSPACE_HYGIENE.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "27 QA Engineer ready."
