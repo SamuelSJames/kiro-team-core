@@ -18,17 +18,11 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/spacing-layout-system/SKILL.md"
-  - "skill://.kiro/skills/design-contract/SKILL.md"
-  - "file://.kiro/steering/agents/08-ui-visual-design-agent.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://WORKFLOW.md"
-  - "file://mockups/**"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
+  - "skill://../skills/spacing-layout-system/SKILL.md"
+  - "skill://../skills/design-contract/SKILL.md"
+  - "file://../steering/agents/08-ui-visual-design-agent.md"
+  - "file://../AGENT_ROSTER.md"
+  - "file://../WORKFLOW.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "08 UI / Visual Design Agent ready."
