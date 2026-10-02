@@ -25,6 +25,10 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "file://../templates/project/HANDOFF.md"
+  - "file://../templates/project/DECISIONS.md"
+  - "file://../templates/project/ASSIGNMENTS.md"
+  - "file://../templates/project/PROJECT_STATUS.md"
   - "skill://../skills/gitea-project-bootstrap/SKILL.md"
   - "skill://../skills/debugging-root-cause/SKILL.md"
   - "skill://../skills/ci-cd-pipeline/SKILL.md"
