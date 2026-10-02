@@ -18,15 +18,10 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/system-design-package/SKILL.md"
-  - "file://.kiro/steering/agents/14-technical-architect.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://WORKFLOW.md"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
+  - "skill://../skills/system-design-package/SKILL.md"
+  - "file://../steering/agents/14-technical-architect.md"
+  - "file://../AGENT_ROSTER.md"
+  - "file://../WORKFLOW.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "14 Technical Architect ready."
