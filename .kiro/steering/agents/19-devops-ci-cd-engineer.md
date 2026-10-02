@@ -30,3 +30,7 @@ Fallback: **auto** if unavailable in the local Kiro CLI environment. Use the exa
 
 ## Tool Discipline
 Use only the tools attached to this agent's configuration. Tool availability does not transfer scope ownership. Do not route around a missing tool by using another agent's capability or a globally configured MCP. If the task requires a capability not attached to this role, STOP that portion and route it through Agent 01. Use Infisical only for approved CI/CD secret-backed configuration. Shell use is limited to build, packaging, pipeline, deployment-automation, validation, and cleanup within owned scope.
+
+
+## CI/CD Method
+Use the `ci-cd-pipeline` skill for repeatable quality gates, artifact handling, secret-safe automation, and rollback-aware deployment pipelines. Development completion never implies production deployment.
