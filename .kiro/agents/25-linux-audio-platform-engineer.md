@@ -1,6 +1,7 @@
 ---
 name: "25-linux-audio-platform-engineer"
 description: "Builds and stabilizes the Linux Mint audio platform used by music projects, with Ubuntu/Debian compatibility."
+model: "gpt-5.6-terra"
 tools:
   - read
   - write
