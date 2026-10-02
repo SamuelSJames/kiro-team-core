@@ -22,7 +22,7 @@ Current explicit attachments:
 - Agent 10 -> OpenRouter Image
 - Agent 15 -> Playwright
 - Agent 18 -> OpenAPI + Infisical
-- Agent 19 -> Infisical
+- Agent 19 -> Gitea + Infisical
 - Agent 20 -> Proxmox
 - Agent 27 -> Playwright
 
@@ -61,7 +61,7 @@ Steering does **not** provide the technical restriction. Steering documents when
 | 16 Backend Engineer | Yes | No | None |
 | 17 Database Engineer | Yes | No | None |
 | 18 Integration / API Engineer | Yes | No | OpenAPI, Infisical |
-| 19 DevOps / CI-CD Engineer | Yes | No | Infisical |
+| 19 DevOps / CI-CD Engineer | Yes | No | Gitea, Infisical |
 | 20 Proxmox Infrastructure Engineer | Yes | No | Proxmox |
 | 21 Music Software Architect | No | No | None |
 | 22 DSP / Audio Engineer | Yes | No | None |
@@ -93,7 +93,9 @@ Connection:
 Kiro CLI -> ssh -T pve3 -> pct exec 301 -> /opt/mcp/run-gitea.sh -> stdio MCP
 ```
 
-Purpose: repositories, commits, branches, issues, pull requests, releases, Actions, packages, wiki, and related repository operations.
+Primary owner: Agent 19.
+
+Purpose: project repository creation/import, repositories, commits, branches, issues, pull requests, releases, Actions, packages, wiki, and related repository operations.
 
 Use only when repository work falls inside the assigned agent's scope.
 
