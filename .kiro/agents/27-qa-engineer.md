@@ -1,6 +1,7 @@
 ---
 name: "27-qa-engineer"
 description: "Independently verifies that the product behaves as specified."
+model: "claude-sonnet-5"
 tools:
   - read
   - write
