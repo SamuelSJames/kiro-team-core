@@ -28,3 +28,17 @@ Each skill has exactly one primary owner. Shared use is allowed only when the sk
 | security-audit | 28 Security Reviewer | Builders consume remediation requirements |
 | code-review | 29 Architecture / Code Reviewer | Builders may self-check; no shared review ownership |
 | release-audit | 30 Release / Completion Auditor | No shared ownership |
+
+| team-orchestration | 01 Orchestrator | No shared ownership |
+| product-methodology | 04 Product Architect | Agents 01, 05, 13, 14 consume baseline |
+| product-design-ux | 05 UX / Product Design | Agents 06, 08, 15, 27 consume outputs |
+| ux-content-copy | 06 Content / UX Copy | Agents 05, 07, 08, 15, 27 consume copy |
+| brand-system | 07 Brand Strategy | Agents 03, 06, 08, 10, 11, 12 consume rules |
+| visual-asset-pipeline | 10 Visual Asset Engineer | Agents 03, 08, 11, 12, 15 consume/request assets |
+| interaction-motion-design | 11 Custom UI / Motion Engineer | Agents 05, 08, 15, 27 collaborate/consume |
+| music-software-architecture | 21 Music Software Architect | Agents 22–25 consume domain architecture |
+| dsp-audio-engineering | 22 DSP / Audio Engineer | Agents 21, 24, 25 consume interfaces/assumptions |
+| midi-engineering | 23 MIDI Engineer | Agents 21, 22, 24 consume MIDI contracts |
+| reaper-integration | 24 REAPER Integration Engineer | Agents 13, 21–23, 25 supply/consume boundaries |
+| linux-audio-platform | 25 Linux Audio Platform Engineer | Agents 21–24 consume platform guarantees |
+| documentation-adr | 26 Documentation / Knowledge Engineer | Decision owners provide rationale/facts |
