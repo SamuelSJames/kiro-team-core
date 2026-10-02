@@ -1,6 +1,7 @@
 ---
 name: "14-technical-architect"
 description: "Turns approved product requirements into a buildable technical architecture."
+model: "gpt-5.6-sol"
 tools:
   - read
   - write
