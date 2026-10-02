@@ -1,6 +1,7 @@
 ---
 name: "11-custom-ui-motion-engineer"
 description: "Builds advanced custom controls, interaction effects, and motion systems."
+model: "claude-sonnet-5"
 tools:
   - read
   - write
