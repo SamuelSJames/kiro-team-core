@@ -1,6 +1,7 @@
 ---
 name: "03-mock-image-generator"
 description: "Generates project mockup images from the completed intake and manages the user visual approval gate."
+model: "gpt-5.6-luna"
 tools:
   - read
   - write
