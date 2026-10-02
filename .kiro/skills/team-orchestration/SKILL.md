@@ -25,6 +25,21 @@ No shared ownership.
 10. Ask the user only for decisions that truly require user authority.
 11. After Agent 30 marks development complete, ask exactly: **DO YOU WANT TO DEPLOY TO PRODUCTION?**
 
+## Project Control Plane
+
+Every active project uses these repository-root coordination files:
+
+- PROJECT_STATUS.md — current objective, phase, milestone, blockers, repository identity.
+- ASSIGNMENTS.md — canonical current agent-owned work queue.
+- DECISIONS.md — confirmed material decisions.
+- HANDOFF.md — concise current handoff context.
+
+Before delegating a task, Agent 01 creates/updates the ASSIGNMENTS.md row with one primary owner, inputs, expected output, status, and blocker state.
+
+Every specialist is expected to read PROJECT_STATUS.md and ASSIGNMENTS.md before starting assigned work.
+
+For a new project, route Agent 19 to create the private Gitea repository immediately after the approved full feature list. For an existing/takeover project, route Agent 19 to establish the private Gitea working repository and then Agent 26 to perform the takeover assessment before new implementation.
+
 ## Context Discipline
 Prefer targeted handoffs and owned skills over loading every steering file or project document.
 
