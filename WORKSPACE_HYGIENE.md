@@ -4,7 +4,7 @@ This policy is global for every project managed by the Kiro team.
 
 ## Repository Is the Source of Truth
 
-Every project must live primarily in a Git repository, normally GitHub or Gitea.
+Every project must use its own designated durable repository. In the current default workflow this is normally Gitea; GitHub is used for a project only when the user explicitly chooses it.
 
 Durable project material belongs in the repository, including:
 
@@ -17,6 +17,14 @@ Durable project material belongs in the repository, including:
 - other files required to reconstruct or continue the project.
 
 A local project directory is a temporary working location, not the authoritative project store.
+
+## Kiro Team Core Separation
+
+`SamuelSJames/kiro-team-core` stores only the reusable global Kiro framework: agents, steering, skills, tools, installer/runtime definitions, and framework documentation.
+
+Never commit application-project source, project assets, project tests, or project-specific deliverables into `kiro-team-core`.
+
+The installed `~/.kiro` runtime is a deployed copy of the framework and does not need to remain a Git working tree after installation and validation.
 
 ## Minimal Local Project Directory
 
