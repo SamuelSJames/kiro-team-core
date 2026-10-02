@@ -31,6 +31,19 @@ resources:
   - "file://../AGENT_ROSTER.md"
   - "file://../TOOLING.md"
   - "file://../WORKSPACE_HYGIENE.md"
+mcpServers:
+  openapi:
+    command: "ssh"
+    args:
+      - "-T"
+      - "pve3"
+      - "pct exec 301 -- /opt/mcp/run-openapi.sh"
+  infisical:
+    command: "ssh"
+    args:
+      - "-T"
+      - "ws"
+      - "~/.local/bin/run-infisical-mcp.sh"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "18 Integration / API Engineer ready."
