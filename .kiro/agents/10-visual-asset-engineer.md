@@ -22,24 +22,12 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/design-contract/SKILL.md"
-  - "skill://.kiro/skills/visual-asset-pipeline/SKILL.md"
-  - "file://.kiro/steering/agents/10-visual-asset-engineer.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://TOOLING.md"
-  - "file://WORKSPACE_HYGIENE.md"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
-mcpServers:
-  openrouter-image:
-    command: "ssh"
-    args:
-      - "-T"
-      - "pve3"
-      - "pct exec 301 -- /opt/mcp/run-openrouter-image.sh"
+  - "skill://../skills/design-contract/SKILL.md"
+  - "skill://../skills/visual-asset-pipeline/SKILL.md"
+  - "file://../steering/agents/10-visual-asset-engineer.md"
+  - "file://../AGENT_ROSTER.md"
+  - "file://../TOOLING.md"
+  - "file://../WORKSPACE_HYGIENE.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "10 Visual Asset Engineer ready."
