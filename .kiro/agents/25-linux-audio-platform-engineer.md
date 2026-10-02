@@ -20,6 +20,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/linux-audio-platform/SKILL.md"
   - "skill://.kiro/skills/debugging-root-cause/SKILL.md"
   - "file://.kiro/steering/agents/25-linux-audio-platform-engineer.md"
   - "file://AGENT_ROSTER.md"
