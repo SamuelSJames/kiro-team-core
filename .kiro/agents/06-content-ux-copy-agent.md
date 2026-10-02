@@ -1,6 +1,7 @@
 ---
 name: "06-content-ux-copy-agent"
 description: "Owns interface wording, onboarding copy, labels, messages, and concise in-product guidance."
+model: "gpt-5.6-luna"
 tools:
   - read
   - write
