@@ -1,6 +1,7 @@
 ---
 name: "02-intake-analyst"
 description: "Reviews and improves project intake documents until they are complete enough for autonomous planning and implementation."
+model: "claude-sonnet-5"
 tools:
   - read
   - write
