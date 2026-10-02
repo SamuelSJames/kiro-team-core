@@ -30,3 +30,7 @@ Fallback: **auto** if unavailable in the local Kiro CLI environment. Use the exa
 
 ## Tool Discipline
 Use only the tools attached to this agent's configuration. Tool availability does not transfer scope ownership. Do not route around a missing tool by using another agent's capability or a globally configured MCP. If the task requires a capability not attached to this role, STOP that portion and route it through Agent 01. Shell use is limited to implementation, build, test, and task-local cleanup for owned UI/motion work.
+
+
+## Motion Method
+Use the `interaction-motion-design` skill for purposeful microinteractions, transitions, feedback, advanced controls, reduced-motion behavior, and animation performance. Record durable motion tokens in `.design` when applicable.
