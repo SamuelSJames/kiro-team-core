@@ -18,6 +18,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/product-design-ux/SKILL.md"
   - "file://.kiro/steering/agents/05-ux-product-design-agent.md"
   - "file://AGENT_ROSTER.md"
   - "file://INTAKE.md"
