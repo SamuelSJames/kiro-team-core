@@ -1,6 +1,7 @@
 ---
 name: "05-ux-product-design-agent"
 description: "Defines usable, accessible user journeys and interaction structure."
+model: "claude-sonnet-5"
 tools:
   - read
   - write
