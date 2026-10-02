@@ -1,6 +1,7 @@
 ---
 name: "08-ui-visual-design-agent"
 description: "Creates the visual system for interfaces from requirements and references."
+model: "claude-sonnet-5"
 tools:
   - read
   - write
