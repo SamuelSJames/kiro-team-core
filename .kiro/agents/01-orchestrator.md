@@ -1,6 +1,7 @@
 ---
 name: "01-orchestrator"
 description: "Primary coordinator for the Kiro Team Core. Owns project state, delegation, sequencing, concise user communication, and escalation."
+model: "claude-opus-5"
 tools:
   - read
   - write
