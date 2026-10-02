@@ -84,6 +84,48 @@ Research is a bounded support function and is invoked at four checkpoints:
 Research must always return findings to the owning agent. Research does not own product scope, architecture, integrations, or release decisions.
 
 
+## GITEA PROJECT REPOSITORY GATE
+
+All durable project work lives in the user's private Gitea.
+
+### New Projects
+
+After intake is validated and the complete numbered feature list is explicitly approved:
+
+1. Agent 01 routes repository bootstrap to Agent 19.
+2. Agent 19 uses the Gitea MCP to create the project's private repository.
+3. Agent 19 seeds the project control plane:
+   - README.md
+   - PROJECT_STATUS.md
+   - ASSIGNMENTS.md
+   - DECISIONS.md
+   - HANDOFF.md
+4. The approved vision, goals, and numbered feature baseline are recorded in the repository without inventing technical architecture.
+5. Agent 19 makes the initial commit, pushes it, and verifies the remote state.
+6. The Gitea repository becomes the durable source of truth before system design and implementation continue.
+
+### Existing / Takeover Projects
+
+For an existing private or public repository:
+
+1. Agent 19 establishes the user's private Gitea repository as the durable working repository before material changes.
+2. Preserve upstream history, attribution, license, and source information when applicable.
+3. Agent 26 performs a takeover assessment using repository inspection plus Graphify.
+4. Agent 26 creates/updates PROJECT_STATUS.md, ASSIGNMENTS.md, docs/PROJECT_MAP.md, docs/TAKEOVER_ASSESSMENT.md, DECISIONS.md, and HANDOFF.md.
+5. Agent 01 uses the assessment to route remaining work toward the user's end objective.
+6. Specialists verify uncertain architecture, behavior, integrations, and quality rather than assuming static code presence means completion.
+
+### Assignment Discovery
+
+Every specialist begins assigned project work by reading:
+
+1. PROJECT_STATUS.md
+2. ASSIGNMENTS.md
+3. HANDOFF.md when a handoff applies
+4. the task-specific project documents referenced by the assignment
+
+ASSIGNMENTS.md is the canonical current work queue and always has one primary agent owner per task.
+
 ## SYSTEM DESIGN GATE
 
 After the numbered feature list is approved and before provisioning or coding:
@@ -126,7 +168,7 @@ Do not design, approve, or implement a REAPER-dependent feature based on assumpt
 
 For any task that creates or clones local working files:
 
-1. The authoritative durable copy must live in the project's GitHub or Gitea repository.
+1. The authoritative durable copy must live in the project's private Gitea repository.
 2. Local repository content exists only while active work requires it.
 3. Required durable changes must be committed, pushed, and verified remotely before cleanup.
 4. Temporary clones, source trees, generated images, screenshots, visual diffs, build outputs, downloads, logs, exports, and other task artifacts must be removed when their purpose is complete.
