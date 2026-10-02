@@ -22,6 +22,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/visual-fidelity-check/SKILL.md"
   - "file://.kiro/steering/agents/09-visual-reconstruction-agent.md"
   - "file://AGENT_ROSTER.md"
   - "file://WORKFLOW.md"
