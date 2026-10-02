@@ -32,7 +32,6 @@ resources:
   - "file://.kiro/steering/agents/02-intake-analyst.md"
   - "file://AGENT_ROSTER.md"
   - "file://WORKFLOW.md"
-  - "skill://.kiro/skills/**/SKILL.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "02 Intake Analyst ready."
