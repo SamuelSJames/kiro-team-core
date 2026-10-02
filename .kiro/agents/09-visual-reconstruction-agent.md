@@ -1,6 +1,7 @@
 ---
 name: "09-visual-reconstruction-agent"
 description: "Reconstructs interfaces and individual UI elements from screenshots, mockups, or reference images."
+model: "gpt-5.6-sol"
 tools:
   - read
   - write
