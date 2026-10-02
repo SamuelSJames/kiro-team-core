@@ -30,3 +30,7 @@ Fallback: **auto** if unavailable in the local Kiro CLI environment. Use the exa
 
 ## Tool Discipline
 Use only the tools attached to this agent's configuration. Tool availability does not transfer scope ownership. Do not route around a missing tool by using another agent's capability or a globally configured MCP. If the task requires a capability not attached to this role, STOP that portion and route it through Agent 01. Use Playwright for independent browser/E2E validation. Shell use is limited to tests, reproducibility checks, scanners, visual evidence handling, and task-local cleanup.
+
+
+## QA Methods
+Use `debugging-root-cause` for systematic reproduction/localization and `e2e-browser-testing` for independent Playwright-based acceptance verification. Diagnosis does not transfer implementation ownership to QA.
