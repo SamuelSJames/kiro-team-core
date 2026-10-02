@@ -22,6 +22,9 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/design-contract/SKILL.md"
+  - "skill://.kiro/skills/e2e-browser-testing/SKILL.md"
+  - "skill://.kiro/skills/debugging-root-cause/SKILL.md"
   - "file://.kiro/steering/agents/27-qa-engineer.md"
   - "file://AGENT_ROSTER.md"
   - "file://WORKFLOW.md"
