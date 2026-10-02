@@ -32,6 +32,13 @@ resources:
   - "file://../TOOLING.md"
   - "file://../WORKSPACE_HYGIENE.md"
   - "file://../WORKFLOW.md"
+mcpServers:
+  playwright:
+    command: "ssh"
+    args:
+      - "-T"
+      - "pve3"
+      - "pct exec 301 -- /opt/mcp/run-playwright.sh"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "15 Frontend Engineer ready."
