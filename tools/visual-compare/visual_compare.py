@@ -71,6 +71,8 @@ def _load_rgb(path_str: str, label: str) -> tuple[np.ndarray, tuple[int, int]]:
                     f"{label} exceeds safe size limits ({w}x{h}; "
                     f"max {MAX_EDGE}px/side, {MAX_PIXELS} total px)"
                 )
+            # Flatten alpha deterministically over an opaque white background so
+            # transparent regions compare consistently.
             if im.mode in ("RGBA", "LA") or (
                 im.mode == "P" and "transparency" in im.info
             ):
@@ -105,12 +107,16 @@ def _metrics(ref: np.ndarray, act: np.ndarray) -> dict[str, float]:
     ref_f = ref.astype(np.float64)
     act_f = act.astype(np.float64)
 
+    # A. Structural similarity (SSIM), per-channel, averaged. data_range=255.
     s = ssim(ref, act, channel_axis=2, data_range=255)
     ssim_score = float(np.clip(s, 0.0, 1.0)) * 100.0
 
+    # B. Pixel similarity: 1 - mean(|diff|)/255 over all RGB values.
     mad = np.mean(np.abs(ref_f - act_f)) / 255.0
     pixel_score = (1.0 - mad) * 100.0
 
+    # C. Edge similarity: Sobel edge maps on grayscale, 1 - mean(|diff|).
+    #    Grayscale via fixed luma weights (deterministic).
     luma = np.array([0.299, 0.587, 0.114], dtype=np.float64)
     ref_gray = ref_f @ luma
     act_gray = act_f @ luma
@@ -127,22 +133,27 @@ def _metrics(ref: np.ndarray, act: np.ndarray) -> dict[str, float]:
 
 
 def _write_diffs(ref: np.ndarray, act: np.ndarray, out_dir: Path) -> None:
-    """Write diff.png and diff-amplified.png."""
+    """Write diff.png (absolute RGB diff) and diff-amplified.png (deterministic
+    contrast stretch of the per-pixel difference magnitude)."""
     diff = np.abs(ref.astype(np.int16) - act.astype(np.int16)).astype(np.uint8)
     Image.fromarray(diff, mode="RGB").save(out_dir / "diff.png")
 
-    mag = diff.max(axis=2).astype(np.float64)
+    # Amplified: per-pixel max-channel difference, contrast-stretched to full
+    # 0..255 range so even tiny discrepancies are visible. Deterministic.
+    mag = diff.max(axis=2).astype(np.float64)  # 0..255
     peak = mag.max()
     if peak > 0:
         amp = (mag / peak) * 255.0
     else:
-        amp = mag
+        amp = mag  # identical images -> all zeros
     amp_u8 = amp.astype(np.uint8)
+    # grayscale heat (white = max difference) on black background
     Image.fromarray(amp_u8, mode="L").save(out_dir / "diff-amplified.png")
 
 
 def compare(reference: str, actual: str, threshold: float, output_dir: str) -> dict:
-    """Run the full comparison."""
+    """Run the full comparison. Returns the result dict. Raises ProcessingError
+    only for invalid input / processing failures (not for a fidelity FAIL)."""
     ref_arr, ref_dim = _load_rgb(reference, "reference")
     act_arr, act_dim = _load_rgb(actual, "actual")
 
@@ -161,6 +172,7 @@ def compare(reference: str, actual: str, threshold: float, output_dir: str) -> d
     }
 
     if not dimensions_match:
+        # Do NOT resize to force a match. Hard-fail the gate, explain clearly.
         result.update(
             {
                 "metrics": {"ssim": None, "pixel_similarity": None, "edge_similarity": None},
@@ -174,6 +186,7 @@ def compare(reference: str, actual: str, threshold: float, output_dir: str) -> d
                 ),
             }
         )
+        # still emit an (empty) diff set so output-dir shape is consistent
         _write_placeholder_diffs(out)
         _write_json(out, result)
         return result
@@ -196,6 +209,7 @@ def compare(reference: str, actual: str, threshold: float, output_dir: str) -> d
 
 
 def _write_placeholder_diffs(out: Path) -> None:
+    """1x1 black diffs when dimensions mismatch (no meaningful diff possible)."""
     blank = Image.new("RGB", (1, 1), (0, 0, 0))
     blank.save(out / "diff.png")
     Image.new("L", (1, 1), 0).save(out / "diff-amplified.png")
@@ -248,7 +262,7 @@ def main(argv: list[str] | None = None) -> int:
     except ProcessingError as e:
         print(f"error: {e}", file=sys.stderr)
         return EXIT_ERROR
-    except Exception as e:
+    except Exception as e:  # defensive: never crash-trace to the caller
         print(f"error: unexpected processing failure: {type(e).__name__}: {e}",
               file=sys.stderr)
         return EXIT_ERROR
@@ -256,6 +270,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.json:
         print(json.dumps(result, indent=2))
     if not args.quiet:
+        # if --json already printed, keep human report on stderr to keep stdout clean
         stream = sys.stderr if args.json else sys.stdout
         print(_human_report(result), file=stream)
 
