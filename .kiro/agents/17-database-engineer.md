@@ -1,6 +1,7 @@
 ---
 name: "17-database-engineer"
 description: "Owns durable data design and data integrity."
+model: "claude-sonnet-5"
 tools:
   - read
   - write
