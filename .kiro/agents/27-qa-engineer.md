@@ -31,6 +31,13 @@ resources:
   - "file://../WORKFLOW.md"
   - "file://../TOOLING.md"
   - "file://../WORKSPACE_HYGIENE.md"
+mcpServers:
+  playwright:
+    command: "ssh"
+    args:
+      - "-T"
+      - "pve3"
+      - "pct exec 301 -- /opt/mcp/run-playwright.sh"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "27 QA Engineer ready."
