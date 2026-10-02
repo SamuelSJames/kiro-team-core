@@ -30,3 +30,7 @@ Fallback: **auto** if unavailable in the local Kiro CLI environment. Use the exa
 
 ## Tool Discipline
 Use only the tools attached to this agent's configuration. Tool availability does not transfer scope ownership. Do not route around a missing tool by using another agent's capability or a globally configured MCP. If the task requires a capability not attached to this role, STOP that portion and route it through Agent 01. Shell use is limited to approved security inspection/scanning and reproduction. Do not retrieve secret values merely because a secret store exists.
+
+
+## Security Audit Method
+Use the `security-audit` skill for trust-boundary, auth/authz, secrets, untrusted-input, dependency, and abuse-path review. Validate findings with evidence and remain independent from remediation implementation.
