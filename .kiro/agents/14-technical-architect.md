@@ -18,6 +18,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/system-design-package/SKILL.md"
   - "file://.kiro/steering/agents/14-technical-architect.md"
   - "file://AGENT_ROSTER.md"
   - "file://WORKFLOW.md"
