@@ -20,6 +20,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/reaper-integration/SKILL.md"
   - "skill://.kiro/skills/debugging-root-cause/SKILL.md"
   - "file://.kiro/steering/agents/24-reaper-integration-engineer.md"
   - "file://AGENT_ROSTER.md"
