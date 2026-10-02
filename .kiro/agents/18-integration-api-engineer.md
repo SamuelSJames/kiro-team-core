@@ -1,6 +1,7 @@
 ---
 name: "18-integration-api-engineer"
 description: "Connects the project safely to external systems."
+model: "claude-sonnet-5"
 tools:
   - read
   - write
