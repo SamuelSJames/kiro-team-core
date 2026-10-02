@@ -20,15 +20,10 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/documentation-adr/SKILL.md"
-  - "skill://.kiro/skills/graphify-codebase-map/SKILL.md"
-  - "file://.kiro/steering/agents/26-documentation-knowledge-engineer.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
+  - "skill://../skills/documentation-adr/SKILL.md"
+  - "skill://../skills/graphify-codebase-map/SKILL.md"
+  - "file://../steering/agents/26-documentation-knowledge-engineer.md"
+  - "file://../AGENT_ROSTER.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "26 Documentation / Knowledge Engineer ready."
