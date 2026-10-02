@@ -24,6 +24,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/debugging-root-cause/SKILL.md"
   - "skill://.kiro/skills/openapi-integration/SKILL.md"
   - "file://.kiro/steering/agents/18-integration-api-engineer.md"
   - "file://AGENT_ROSTER.md"
