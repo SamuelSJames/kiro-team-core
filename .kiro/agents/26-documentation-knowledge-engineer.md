@@ -21,6 +21,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://../skills/project-takeover-assessment/SKILL.md"
   - "skill://../skills/documentation-adr/SKILL.md"
   - "skill://../skills/graphify-codebase-map/SKILL.md"
   - "file://../steering/agents/26-documentation-knowledge-engineer.md"
