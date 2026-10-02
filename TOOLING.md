@@ -22,6 +22,7 @@ Current explicit attachments:
 - Agent 10 -> OpenRouter Image
 - Agent 15 -> Playwright
 - Agent 18 -> OpenAPI + Infisical
+- Agent 19 -> Infisical
 - Agent 20 -> Proxmox
 - Agent 27 -> Playwright
 
@@ -128,7 +129,7 @@ Connection:
 Kiro CLI -> ssh -T pve3 -> pct exec 301 -> /opt/mcp/run-playwright.sh -> stdio MCP
 ```
 
-Validated role support: Agents 09, 15, 27, and 29 when their assigned task requires browser inspection or validation.
+Validated role support: Agents 09, 15, and 27 when their assigned task requires browser inspection or validation.
 
 Primary visual-fidelity workflow:
 1. set the canonical viewport;
