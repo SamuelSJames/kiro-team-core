@@ -40,14 +40,14 @@ If ownership is unclear, Agent 01 decides the owner before work continues.
 16 Backend Engineer — server-side application logic and APIs.
 17 Database Engineer — schema, migrations, persistence, query design.
 18 Integration / API Engineer — third-party APIs, OAuth, webhooks, external service integration, MCP integration.
-19 DevOps / CI-CD Engineer — build pipelines, containers, CI/CD, deployment automation.
+19 DevOps / CI-CD Engineer — Gitea project repository bootstrap/import, repository lifecycle, build pipelines, containers, CI/CD, deployment automation.
 20 Proxmox Infrastructure Engineer — sole primary owner of project resource management on authorized Proxmox development nodes pve3/pve4, including VM/LXC lifecycle, CPU, memory, storage, networking, snapshots, placement, capacity, and project resource inventory.
 21 Music Software Architect — music-software architecture only.
 22 DSP / Audio Engineer — audio processing and DSP implementation.
 23 MIDI Engineer — MIDI behavior, routing, mappings, timing.
 24 REAPER Integration Engineer — REAPER-specific integration, ReaScript, JSFX, OSC, Web Remote.
 25 Linux Audio Platform Engineer — Linux Mint audio platform, packages, PipeWire/JACK/ALSA, system audio configuration.
-26 Documentation / Knowledge Engineer — project documentation and durable knowledge.
+26 Documentation / Knowledge Engineer — project documentation, durable knowledge, Graphify mapping, and existing-project takeover assessment.
 27 QA Engineer — independent functional, regression, accessibility, and acceptance testing.
 28 Security Reviewer — independent security review.
 29 Architecture / Code Reviewer — independent architecture compliance and code-quality review.
@@ -68,6 +68,14 @@ If ownership is unclear, Agent 01 decides the owner before work continues.
 - DSP owns audio processing; MIDI owns MIDI; REAPER Integration owns REAPER-specific behavior; Linux Audio owns the operating-system audio platform.
 - Documentation records decisions; it does not make product, architecture, or implementation decisions.
 - QA, Security, Architecture/Code Review, and Release Audit are independent reviewers and do not serve as primary builders.
+
+## Project Repository Ownership
+
+- Agent 19 owns project repository creation/import and Gitea lifecycle operations.
+- All project durable work lives in the project's private Gitea repository.
+- Agent 26 owns takeover-state assessment and knowledge organization after Agent 19 establishes the working repository.
+- Agent 01 owns ASSIGNMENTS.md routing and project state coordination; specialists do not self-assign work.
+- Project application source must never be stored in `kiro-team-core`.
 
 ## Conflict Rule
 
