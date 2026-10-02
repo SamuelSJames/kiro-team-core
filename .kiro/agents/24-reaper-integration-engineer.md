@@ -1,6 +1,7 @@
 ---
 name: "24-reaper-integration-engineer"
 description: "Owns REAPER-specific integration and control surfaces."
+model: "gpt-5.6-sol"
 tools:
   - read
   - write
