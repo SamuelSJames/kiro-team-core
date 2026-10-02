@@ -94,3 +94,22 @@ uv tool install graphifyy
 ```
 
 Do not automatically run `graphify kiro install` during Kiro Team Core installation. The upstream command creates its own Kiro skill/steering files; this repository already carries the controlled integration we want.
+
+
+## Bootstrap Installer
+
+Install or refresh the global Kiro Team Core runtime with:
+
+```bash
+bash scripts/install-kiro-team-core.sh
+```
+
+The installer clones this GitHub framework only into a temporary directory, validates it, copies the managed runtime into `~/.kiro`, installs/verifies `visual-compare` and Graphify, and never leaves `~/.kiro` as a Git working tree.
+
+For validation without changing `~/.kiro`:
+
+```bash
+bash scripts/install-kiro-team-core.sh --dry-run
+```
+
+Project repositories are separate: all durable project work uses the user's private Gitea. Agent 19 owns new-project repository bootstrap/import; Agent 26 owns existing-project takeover assessment.
