@@ -42,3 +42,5 @@ Each skill has exactly one primary owner. Shared use is allowed only when the sk
 | reaper-integration | 24 REAPER Integration Engineer | Agents 13, 21–23, 25 supply/consume boundaries |
 | linux-audio-platform | 25 Linux Audio Platform Engineer | Agents 21–24 consume platform guarantees |
 | documentation-adr | 26 Documentation / Knowledge Engineer | Decision owners provide rationale/facts |
+| gitea-project-bootstrap | 19 DevOps / CI-CD Engineer | Agent 01 supplies approved project identity/scope; Agent 26 follows for takeover assessment |
+| project-takeover-assessment | 26 Documentation / Knowledge Engineer | Agents 13, 14, 27, 29 may provide bounded evidence |
