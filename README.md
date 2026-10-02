@@ -15,7 +15,15 @@ Reusable 30-agent Kiro CLI software team with strict role ownership, gated workf
 
 - `.kiro/agents/` — custom agent definitions.
 - `.kiro/steering/agents/` — focused role steering.
-- `tools/visual-compare/` — canonical source location for the deterministic visual-fidelity utility once synced to the repository.
+- `.kiro/skills/` — reusable owner-scoped procedures.
+- `tools/visual-compare/` — canonical deterministic visual-fidelity utility source.
+- `tools/openrouter-image/` — canonical OpenRouter image MCP source.
+
+## Repository Purpose
+
+`kiro-team-core` is only the canonical source/template for the global Kiro runtime. It is not an application-project repository. Actual project source must never be committed into this repository.
+
+The future installer will clone this repository temporarily, install the global runtime into `~/.kiro`, validate it, and then the installed runtime may operate without Git metadata.
 
 ## Global Principles
 
