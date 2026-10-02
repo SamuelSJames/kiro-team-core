@@ -20,6 +20,9 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/design-contract/SKILL.md"
+  - "skill://.kiro/skills/spacing-layout-system/SKILL.md"
+  - "skill://.kiro/skills/web-3d-animation/SKILL.md"
   - "file://.kiro/steering/agents/12-3d-interactive-visual-engineer.md"
   - "file://AGENT_ROSTER.md"
   - "file://INTAKE.md"
