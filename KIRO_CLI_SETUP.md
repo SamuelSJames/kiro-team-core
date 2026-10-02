@@ -81,3 +81,16 @@ Useful controls:
 ```
 
 Use Kiro CLI's local Guide/introspection when validating version-specific hooks, permissions, MCP servers, or settings before enabling them.
+
+
+## Graphify CLI
+
+Graphify is an external deterministic CLI dependency used by the framework-owned `graphify-codebase-map` skill.
+
+Install globally in WSL with:
+
+```bash
+uv tool install graphifyy
+```
+
+Do not automatically run `graphify kiro install` during Kiro Team Core installation. The upstream command creates its own Kiro skill/steering files; this repository already carries the controlled integration we want.
