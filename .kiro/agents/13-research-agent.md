@@ -1,6 +1,7 @@
 ---
 name: "13-research-agent"
 description: "Finds reliable technical evidence before the team commits to uncertain tools, APIs, standards, or approaches."
+model: "gpt-5.6-sol"
 tools:
   - read
   - write
