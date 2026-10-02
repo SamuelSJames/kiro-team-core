@@ -30,3 +30,7 @@ Fallback: **auto** if unavailable in the local Kiro CLI environment. Use the exa
 
 ## Tool Discipline
 Use only the tools attached to this agent's configuration. Tool availability does not transfer scope ownership. Do not route around a missing tool by using another agent's capability or a globally configured MCP. If the task requires a capability not attached to this role, STOP that portion and route it through Agent 01. Shell use is limited to implementation, build, conversion, test, and task-local cleanup for owned 3D/interactive work.
+
+
+## Web 3D
+Use the `web-3d-animation` skill for browser-based Three.js/WebGL scenes, animation, model loading, camera/lighting, interaction, performance, reduced-motion behavior, and cleanup. 3D must follow the approved mockup and `.design` contract and must not degrade core page usability.
