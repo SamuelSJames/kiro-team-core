@@ -18,6 +18,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/music-software-architecture/SKILL.md"
   - "file://.kiro/steering/agents/21-music-software-architect.md"
   - "file://AGENT_ROSTER.md"
   - "file://INTAKE.md"
