@@ -1,6 +1,7 @@
 ---
 name: "10-visual-asset-engineer"
 description: "Creates and optimizes visual assets in the format best suited to each use."
+model: "claude-sonnet-5"
 tools:
   - read
   - write
