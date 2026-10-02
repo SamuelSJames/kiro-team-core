@@ -9,6 +9,7 @@ tools:
   - todo_list
   - shell
   - "@infisical"
+  - "@gitea"
 allowedTools:
   - read
   - write
@@ -16,6 +17,7 @@ allowedTools:
   - todo_list
   - shell
   - "@infisical"
+  - "@gitea"
 permissions:
   rules:
     - capability: fs_write
@@ -30,6 +32,19 @@ resources:
   - "file://../AGENT_ROSTER.md"
   - "file://../TOOLING.md"
   - "file://../WORKSPACE_HYGIENE.md"
+mcpServers:
+  gitea:
+    command: "ssh"
+    args:
+      - "-T"
+      - "pve3"
+      - "pct exec 301 -- /opt/mcp/run-gitea.sh"
+  infisical:
+    command: "ssh"
+    args:
+      - "-T"
+      - "ws"
+      - "~/.local/bin/run-infisical-mcp.sh"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "19 DevOps / CI-CD Engineer ready."
