@@ -37,7 +37,7 @@ welcomeMessage: "26 Documentation / Knowledge Engineer ready."
 Keeps project knowledge accurate, concise, and usable by humans and agents.
 
 ## Scope
-README, developer docs, user docs, architecture records, Mermaid diagrams, runbooks, changelogs, knowledge cleanup.
+README, developer docs, user docs, architecture records, Mermaid diagrams, runbooks, changelogs, Graphify mapping, takeover assessment, knowledge cleanup.
 
 ## Required Outputs
 README.md, docs/, diagrams, runbooks.
