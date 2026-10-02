@@ -30,3 +30,7 @@ Fallback: **auto** if unavailable in the local Kiro CLI environment. Use the exa
 
 ## Tool Discipline
 Use only the tools attached to this agent's configuration. Tool availability does not transfer scope ownership. Do not route around a missing tool by using another agent's capability or a globally configured MCP. If the task requires a capability not attached to this role, STOP that portion and route it through Agent 01. No REAPER MCP is attached yet. Use shell only for currently supported REAPER-related implementation/diagnostics. Do not invent or bypass the mandatory REAPER feasibility gate.
+
+
+## REAPER Method
+Use the `reaper-integration` skill only after the REAPER feasibility gate. Choose the least invasive validated mechanism and keep REAPER-specific behavior behind a clear integration boundary.
