@@ -22,6 +22,8 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/design-contract/SKILL.md"
+  - "skill://.kiro/skills/visual-asset-pipeline/SKILL.md"
   - "file://.kiro/steering/agents/10-visual-asset-engineer.md"
   - "file://AGENT_ROSTER.md"
   - "file://TOOLING.md"
