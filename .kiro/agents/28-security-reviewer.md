@@ -20,6 +20,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/security-audit/SKILL.md"
   - "file://.kiro/steering/agents/28-security-reviewer.md"
   - "file://AGENT_ROSTER.md"
   - "file://INTAKE.md"
