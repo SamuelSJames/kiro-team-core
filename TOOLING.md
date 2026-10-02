@@ -68,7 +68,7 @@ Steering does **not** provide the technical restriction. Steering documents when
 | 23 MIDI Engineer | Yes | No | None |
 | 24 REAPER Integration Engineer | Yes | No | None until REAPER tooling is added |
 | 25 Linux Audio Platform Engineer | Yes | No | None |
-| 26 Documentation / Knowledge Engineer | No | No | None |
+| 26 Documentation / Knowledge Engineer | Yes | No | None |
 | 27 QA Engineer | Yes | No | Playwright |
 | 28 Security Reviewer | Yes | No | None |
 | 29 Architecture / Code Reviewer | Yes | No | None |
@@ -173,6 +173,31 @@ Validated tools:
 The OpenRouter key is retrieved from Infisical at runtime and must never be copied into source, MCP configuration, launcher arguments, Git, logs, or agent output.
 
 Generated images are temporary by default and follow `WORKSPACE_HYGIENE.md`.
+
+## Deterministic Local Tool — Graphify
+
+Graphify is a local deterministic codebase knowledge-graph CLI used to reduce broad source reads and expose relationships across code, docs, configs, schemas, and manifests.
+
+Official package/CLI:
+
+```bash
+uv tool install graphifyy
+# command installed:
+graphify
+```
+
+Primary owner: Agent 26.
+
+Shared use when relevant: Agents 14, 15, 16, 17, 18, 27, and 29.
+
+Kiro Team Core manages its own Graphify skill and steering. Do not run `graphify kiro install` inside the managed global runtime unless intentionally migrating away from the framework-owned integration, because the upstream command writes its own `.kiro/skills/` and `.kiro/steering/` entries.
+
+Rules:
+- build/query graphs only for the active project/task scope;
+- query the graph before broad source inspection when relationship mapping will help;
+- verify exact implementation facts against source files;
+- keep `graphify-out/` temporary by default;
+- remove graph outputs during workspace cleanup unless explicitly promoted as durable project material.
 
 ## Deterministic Local Tool — visual-compare
 
