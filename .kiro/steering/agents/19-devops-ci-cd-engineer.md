@@ -34,3 +34,7 @@ Use only the tools attached to this agent's configuration. Tool availability doe
 
 ## CI/CD Method
 Use the `ci-cd-pipeline` skill for repeatable quality gates, artifact handling, secret-safe automation, and rollback-aware deployment pipelines. Development completion never implies production deployment.
+
+
+## Gitea Repository Ownership
+Agent 19 is the primary owner of project repository creation/import and Gitea lifecycle operations. For new projects, use the `gitea-project-bootstrap` skill immediately after the approved full feature list. For existing/public sources, establish the private Gitea working repository before material changes, preserve upstream attribution/history where applicable, and then hand off to Agent 26 for takeover assessment.
