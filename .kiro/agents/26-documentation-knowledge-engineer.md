@@ -6,11 +6,13 @@ tools:
   - write
   - knowledge
   - todo_list
+  - shell
 allowedTools:
   - read
   - write
   - knowledge
   - todo_list
+  - shell
 permissions:
   rules:
     - capability: fs_write
@@ -18,6 +20,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/graphify-codebase-map/SKILL.md"
   - "file://.kiro/steering/agents/26-documentation-knowledge-engineer.md"
   - "file://AGENT_ROSTER.md"
   - "file://INTAKE.md"
