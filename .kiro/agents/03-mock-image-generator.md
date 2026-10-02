@@ -24,6 +24,7 @@ permissions:
         - "DECISIONS.md"
       effect: allow
 resources:
+  - "skill://.kiro/skills/mockup-approval-cycle/SKILL.md"
   - "file://.kiro/steering/agents/03-mock-image-generator.md"
   - "file://AGENT_ROSTER.md"
   - "file://TOOLING.md"
