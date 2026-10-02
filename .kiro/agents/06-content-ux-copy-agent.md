@@ -21,6 +21,7 @@ permissions:
         - "docs/**"
       effect: allow
 resources:
+  - "skill://.kiro/skills/ux-content-copy/SKILL.md"
   - "file://.kiro/steering/agents/06-content-ux-copy-agent.md"
   - "file://AGENT_ROSTER.md"
   - "file://WORKFLOW.md"
