@@ -38,7 +38,7 @@ mcpServers:
       - "pve3"
       - "pct exec 301 -- /opt/mcp/run-openrouter-image.sh"
 includeMcpJson: false
-includePowers: true
+includePowers: false
 welcomeMessage: "03 Mock Image Generator ready."
 ---
 
