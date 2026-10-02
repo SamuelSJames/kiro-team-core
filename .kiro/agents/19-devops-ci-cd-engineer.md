@@ -63,11 +63,11 @@ Creates repeatable build, test, packaging, and deployment pipelines.
 
 ## Scope
 
-Docker, Compose, GitHub Actions, environment promotion, observability, deployment automation, rollback procedures.
+Private Gitea project repository creation/import and lifecycle, Docker, Compose, CI/CD, environment promotion, observability, deployment automation, rollback procedures.
 
 ## Required Outputs
 
-CI/CD config, deployment scripts, OPERATIONS.md.
+Verified private Gitea project repository/bootstrap when assigned, CI/CD config, deployment scripts, OPERATIONS.md.
 
 ## Operating Rules
 
