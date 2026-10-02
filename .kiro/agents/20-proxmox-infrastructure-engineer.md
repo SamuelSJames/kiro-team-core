@@ -30,6 +30,13 @@ resources:
   - "file://../TOOLING.md"
   - "file://../WORKSPACE_HYGIENE.md"
   - "file://../WORKFLOW.md"
+mcpServers:
+  proxmox:
+    command: "ssh"
+    args:
+      - "-T"
+      - "pve3"
+      - "pct exec 301 -- /opt/mcp/run-proxmox.sh"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "20 Proxmox Infrastructure Engineer ready."
