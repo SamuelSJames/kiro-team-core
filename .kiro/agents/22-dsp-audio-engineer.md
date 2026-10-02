@@ -20,6 +20,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/dsp-audio-engineering/SKILL.md"
   - "skill://.kiro/skills/debugging-root-cause/SKILL.md"
   - "file://.kiro/steering/agents/22-dsp-audio-engineer.md"
   - "file://AGENT_ROSTER.md"
