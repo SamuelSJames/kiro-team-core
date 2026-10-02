@@ -20,14 +20,9 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/security-audit/SKILL.md"
-  - "file://.kiro/steering/agents/28-security-reviewer.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
+  - "skill://../skills/security-audit/SKILL.md"
+  - "file://../steering/agents/28-security-reviewer.md"
+  - "file://../AGENT_ROSTER.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "28 Security Reviewer ready."
