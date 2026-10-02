@@ -1,6 +1,7 @@
 ---
 name: "22-dsp-audio-engineer"
 description: "Implements and validates real-time audio processing."
+model: "gpt-5.6-sol"
 tools:
   - read
   - write
