@@ -18,14 +18,9 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/product-design-ux/SKILL.md"
-  - "file://.kiro/steering/agents/05-ux-product-design-agent.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
+  - "skill://../skills/product-design-ux/SKILL.md"
+  - "file://../steering/agents/05-ux-product-design-agent.md"
+  - "file://../AGENT_ROSTER.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "05 UX / Product Design Agent ready."
