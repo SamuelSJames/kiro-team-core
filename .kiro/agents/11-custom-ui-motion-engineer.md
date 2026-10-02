@@ -20,16 +20,11 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/spacing-layout-system/SKILL.md"
-  - "skill://.kiro/skills/design-contract/SKILL.md"
-  - "skill://.kiro/skills/interaction-motion-design/SKILL.md"
-  - "file://.kiro/steering/agents/11-custom-ui-motion-engineer.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
+  - "skill://../skills/spacing-layout-system/SKILL.md"
+  - "skill://../skills/design-contract/SKILL.md"
+  - "skill://../skills/interaction-motion-design/SKILL.md"
+  - "file://../steering/agents/11-custom-ui-motion-engineer.md"
+  - "file://../AGENT_ROSTER.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "11 Custom UI / Motion Engineer ready."
