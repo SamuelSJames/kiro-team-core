@@ -1,5 +1,18 @@
 # Kiro CLI — Team Core Setup
 
+## V3 Harness Requirement
+
+Kiro Team Core requires the **V3 / unified agent harness**. The framework uses Markdown agent configs, `skill://` resources, capability-tag tools, inline MCP servers, and permissions blocks that the legacy CLI 2.x agent validator treats as JSON-only.
+
+On Kiro CLI 2.x releases that include V3, start the framework with:
+
+```bash
+kiro-cli --v3
+```
+
+Do not validate these Markdown agents with the legacy command `kiro-cli agent validate --path <file.md>`; that command parses the file as legacy JSON. Use V3 agent discovery and the in-session `/agent list` / `/agent swap` checks instead.
+
+
 This repository is designed for Kiro CLI as the primary runtime.
 
 ## Context Isolation
@@ -68,7 +81,7 @@ Start in the project:
 
 ```bash
 cd <project>
-kiro-cli
+kiro-cli --v3
 ```
 
 Useful controls:
