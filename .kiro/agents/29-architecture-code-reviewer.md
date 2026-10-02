@@ -1,6 +1,7 @@
 ---
 name: "29-architecture-code-reviewer"
 description: "Independently reviews implementation quality and conformity to approved architecture."
+model: "claude-opus-5"
 tools:
   - read
   - write
