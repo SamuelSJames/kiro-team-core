@@ -25,6 +25,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://../skills/gitea-project-bootstrap/SKILL.md"
   - "skill://../skills/debugging-root-cause/SKILL.md"
   - "skill://../skills/ci-cd-pipeline/SKILL.md"
   - "skill://../skills/repository-work-cycle/SKILL.md"
