@@ -24,6 +24,20 @@
 20. AWS is the default production architecture target unless the intake or user specifies another target.
 21. Linode/Akamai is an alternative production target when selected.
 
+## Living Design Contract
+
+For projects with a visual UI, Agent 08 maintains a project-root `.design` living visual contract using the AgentsORG `design.v1` approach after the mockup is approved and before detailed UI implementation.
+
+The precedence order is:
+
+1. explicit current user instruction;
+2. approved product scope;
+3. approved mockup;
+4. project `.design` contract;
+5. generic design guidance.
+
+The `.design` file captures approved tokens, component appearance, visual constraints, locked decisions, and related design rules so downstream agents do not re-invent the visual system. It does not replace the approved mockup or the deterministic 92% visual-fidelity gate.
+
 ## Visual Source of Truth
 
 The explicitly approved mockup is the visual source of truth for the project.
