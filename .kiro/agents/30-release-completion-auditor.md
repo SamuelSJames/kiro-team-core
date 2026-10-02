@@ -18,19 +18,13 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/design-contract/SKILL.md"
-  - "skill://.kiro/skills/release-audit/SKILL.md"
-  - "file://.kiro/steering/agents/30-release-completion-auditor.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://WORKFLOW.md"
-  - "file://TOOLING.md"
-  - "file://WORKSPACE_HYGIENE.md"
-  - "file://mockups/**"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
+  - "skill://../skills/design-contract/SKILL.md"
+  - "skill://../skills/release-audit/SKILL.md"
+  - "file://../steering/agents/30-release-completion-auditor.md"
+  - "file://../AGENT_ROSTER.md"
+  - "file://../WORKFLOW.md"
+  - "file://../TOOLING.md"
+  - "file://../WORKSPACE_HYGIENE.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "30 Release / Completion Auditor ready."
