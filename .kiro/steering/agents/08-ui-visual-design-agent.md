@@ -34,3 +34,7 @@ Use only the tools attached to this agent's configuration. Tool availability doe
 
 ## .design Contract
 For UI projects, Agent 08 owns the project-root `.design` living visual contract. The approved mockup remains the visual source of truth; `.design` translates approved visual decisions into machine-readable tokens, component rules, constraints, and locked decisions for downstream agents. Do not use the contract to redesign approved work.
+
+
+## Spacing System
+Use the `spacing-layout-system` skill to define project spacing tokens, rhythm, density, gutters, section spacing, nested component spacing, and responsive whitespace. Record approved spacing rules in `.design` and DESIGN_TOKENS.md; avoid arbitrary one-off values.
