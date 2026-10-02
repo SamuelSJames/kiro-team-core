@@ -30,3 +30,7 @@ Fallback: **auto** if unavailable in the local Kiro CLI environment. Use the exa
 
 ## Tool Discipline
 Use only the tools attached to this agent's configuration. Tool availability does not transfer scope ownership. Do not route around a missing tool by using another agent's capability or a globally configured MCP. If the task requires a capability not attached to this role, STOP that portion and route it through Agent 01.
+
+
+## Graphify
+Agent 26 owns the reusable Graphify knowledge-map procedure. Use the `graphify` CLI through shell to build/query task-scoped codebase graphs when relationship mapping will reduce broad file reads. Graph output is temporary by default and must not become a competing permanent knowledge store.
