@@ -4,7 +4,7 @@ This policy is global for every project managed by the Kiro team.
 
 ## Repository Is the Source of Truth
 
-Every project must use its own designated durable repository. In the current default workflow this is normally Gitea; GitHub is used for a project only when the user explicitly chooses it.
+Every project must use its own private Gitea repository as the durable source of truth. External/public repositories may be imported as source material, but durable team work continues in the user's private Gitea unless the user explicitly changes this policy.
 
 Durable project material belongs in the repository, including:
 
