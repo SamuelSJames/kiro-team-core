@@ -36,6 +36,7 @@ permissions:
         - "*"
       effect: allow
 resources:
+  - "skill://.kiro/skills/team-orchestration/SKILL.md"
   - "file://SKILL_REGISTRY.md"
   - "file://.kiro/steering/agents/01-orchestrator.md"
   - "file://AGENT_ROSTER.md"
