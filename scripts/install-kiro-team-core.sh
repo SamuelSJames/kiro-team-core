@@ -592,7 +592,7 @@ if [[ "$TRY_KIRO_VALIDATION" -eq 1 ]]; then
   if kiro-cli agent validate --help >/dev/null 2>&1; then
     log "Kiro CLI exposes 'agent validate'; validating installed agents."
     while IFS= read -r -d '' agent_file; do
-      kiro-cli agent validate "$agent_file"
+      kiro-cli agent validate --path "$agent_file"
     done < <(
       find "$KIRO_HOME/agents"         -maxdepth 1         -type f         -name '*.md'         -print0 | sort -z
     )
