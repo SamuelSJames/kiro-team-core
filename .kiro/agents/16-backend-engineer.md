@@ -1,6 +1,7 @@
 ---
 name: "16-backend-engineer"
 description: "Implements server-side application behavior and business logic."
+model: "claude-sonnet-5"
 tools:
   - read
   - write
