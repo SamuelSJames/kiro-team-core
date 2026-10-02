@@ -1,6 +1,7 @@
 ---
 name: "07-brand-strategy-agent"
 description: "Protects and applies the approved brand across product and communication decisions."
+model: "claude-sonnet-5"
 tools:
   - read
   - write
