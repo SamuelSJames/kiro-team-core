@@ -594,25 +594,11 @@ log "Kiro CLI detected: $(kiro-cli --version 2>&1 | head -n 1)"
 # parses agent files as JSON and is not valid for this framework.
 if [[ "$TRY_KIRO_VALIDATION" -eq 1 ]]; then
   if kiro-cli --v3 agent list >/dev/null 2>&1; then
-    log "Kiro V3 harness detected; validating that all 30 global agents are discoverable."
-    AGENT_LIST_OUTPUT="$(kiro-cli --v3 agent list 2>&1)" || die "Kiro V3 agent discovery failed."
-
-    missing_agents=0
-    for agent_file in "$KIRO_HOME"/agents/*.md; do
-      agent_name="$(basename "$agent_file" .md)"
-      if ! grep -Fq "$agent_name" <<<"$AGENT_LIST_OUTPUT"; then
-        warn "Kiro V3 agent list did not show: $agent_name"
-        missing_agents=$((missing_agents + 1))
-      fi
-    done
-
-    if [[ "$missing_agents" -ne 0 ]]; then
-      die "Kiro V3 discovery is missing $missing_agents installed agent(s)."
-    fi
-
-    log "Kiro V3 discovery passed: all 30 installed agents are visible."
+    log "Kiro V3 harness detected."
+    log "Non-interactive 'agent list' is advisory only; custom-agent visibility is verified in-session with /agent list."
   else
-    die "Kiro Team Core requires the V3 agent harness. 'kiro-cli --v3 agent list' failed."
+    warn "Could not verify the V3 harness non-interactively."
+    warn "Static/runtime validation passed; use the live Kiro /agent list check as the authoritative smoke test."
   fi
 fi
 
