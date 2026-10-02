@@ -36,12 +36,12 @@ permissions:
         - "*"
       effect: allow
 resources:
-  - "skill://.kiro/skills/team-orchestration/SKILL.md"
-  - "file://SKILL_REGISTRY.md"
-  - "file://.kiro/steering/agents/01-orchestrator.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://SCOPE_GOVERNANCE.md"
-  - "file://WORKFLOW.md"
+  - "skill://../skills/team-orchestration/SKILL.md"
+  - "file://../SKILL_REGISTRY.md"
+  - "file://../steering/agents/01-orchestrator.md"
+  - "file://../AGENT_ROSTER.md"
+  - "file://../SCOPE_GOVERNANCE.md"
+  - "file://../WORKFLOW.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "01 Orchestrator ready."
