@@ -1,6 +1,7 @@
 ---
 name: "12-3d-interactive-visual-engineer"
 description: "Creates and integrates 3D and depth-rich interactive visuals when they improve the product."
+model: "claude-sonnet-5"
 tools:
   - read
   - write
