@@ -588,17 +588,31 @@ PY
 
 log "Kiro CLI detected: $(kiro-cli --version 2>&1 | head -n 1)"
 
+# Kiro Team Core intentionally uses the V3/unified agent harness because the
+# framework depends on Markdown agent configs, skill:// resources, inline MCP
+# servers, capability tags, and permissions blocks. CLI 2.x legacy validation
+# parses agent files as JSON and is not valid for this framework.
 if [[ "$TRY_KIRO_VALIDATION" -eq 1 ]]; then
-  if kiro-cli agent validate --help >/dev/null 2>&1; then
-    log "Kiro CLI exposes 'agent validate'; validating installed agents."
-    while IFS= read -r -d '' agent_file; do
-      kiro-cli agent validate --path "$agent_file"
-    done < <(
-      find "$KIRO_HOME/agents"         -maxdepth 1         -type f         -name '*.md'         -print0 | sort -z
-    )
+  if kiro-cli --v3 agent list >/dev/null 2>&1; then
+    log "Kiro V3 harness detected; validating that all 30 global agents are discoverable."
+    AGENT_LIST_OUTPUT="$(kiro-cli --v3 agent list 2>&1)" || die "Kiro V3 agent discovery failed."
+
+    missing_agents=0
+    for agent_file in "$KIRO_HOME"/agents/*.md; do
+      agent_name="$(basename "$agent_file" .md)"
+      if ! grep -Fq "$agent_name" <<<"$AGENT_LIST_OUTPUT"; then
+        warn "Kiro V3 agent list did not show: $agent_name"
+        missing_agents=$((missing_agents + 1))
+      fi
+    done
+
+    if [[ "$missing_agents" -ne 0 ]]; then
+      die "Kiro V3 discovery is missing $missing_agents installed agent(s)."
+    fi
+
+    log "Kiro V3 discovery passed: all 30 installed agents are visible."
   else
-    warn "This Kiro CLI does not expose a usable 'kiro-cli agent validate' command."
-    warn "Framework static/runtime validation passed; perform the final live /agent smoke test."
+    die "Kiro Team Core requires the V3 agent harness. 'kiro-cli --v3 agent list' failed."
   fi
 fi
 
