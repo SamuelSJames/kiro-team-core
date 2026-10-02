@@ -14,11 +14,13 @@ Builders and reviewers may follow this procedure. Use does not transfer reposito
 ## Repository Separation
 - `SamuelSJames/kiro-team-core` is only the canonical source for the global Kiro framework.
 - Never commit application/project source into `kiro-team-core`.
-- A project's durable repository is the repository designated for that project, normally Gitea unless the user explicitly chooses another target.
+- Every project's durable working repository is the user's private Gitea repository unless the user explicitly changes this policy.
 - The installed `~/.kiro` runtime is not required to remain a Git working tree.
 
+Public or external repositories are source inputs, not the durable working target. Agent 19 imports/preserves them into private Gitea before material team modifications.
+
 ## Steps
-1. Identify the project's designated repository before making durable code changes.
+1. Confirm the project's private Gitea repository and current assignment before making durable code changes.
 2. Create/clone a temporary working copy only for the active task.
 3. Perform and validate the assigned work.
 4. Commit durable changes to the project repository only.
