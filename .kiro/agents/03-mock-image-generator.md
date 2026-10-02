@@ -24,20 +24,11 @@ permissions:
         - "DECISIONS.md"
       effect: allow
 resources:
-  - "skill://.kiro/skills/mockup-approval-cycle/SKILL.md"
-  - "file://.kiro/steering/agents/03-mock-image-generator.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://TOOLING.md"
-  - "file://WORKSPACE_HYGIENE.md"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-mcpServers:
-  openrouter-image:
-    command: "ssh"
-    args:
-      - "-T"
-      - "pve3"
-      - "pct exec 301 -- /opt/mcp/run-openrouter-image.sh"
+  - "skill://../skills/mockup-approval-cycle/SKILL.md"
+  - "file://../steering/agents/03-mock-image-generator.md"
+  - "file://../AGENT_ROSTER.md"
+  - "file://../TOOLING.md"
+  - "file://../WORKSPACE_HYGIENE.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "03 Mock Image Generator ready."
