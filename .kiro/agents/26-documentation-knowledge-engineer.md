@@ -20,6 +20,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/documentation-adr/SKILL.md"
   - "skill://.kiro/skills/graphify-codebase-map/SKILL.md"
   - "file://.kiro/steering/agents/26-documentation-knowledge-engineer.md"
   - "file://AGENT_ROSTER.md"
