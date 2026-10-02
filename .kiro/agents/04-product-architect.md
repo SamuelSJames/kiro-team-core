@@ -1,6 +1,7 @@
 ---
 name: "04-product-architect"
 description: "Converts approved intake into product requirements, user journeys, feature behavior, acceptance criteria, and product boundaries."
+model: "gpt-5.6-sol"
 tools:
   - read
   - write
