@@ -20,6 +20,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/midi-engineering/SKILL.md"
   - "skill://.kiro/skills/debugging-root-cause/SKILL.md"
   - "file://.kiro/steering/agents/23-midi-engineer.md"
   - "file://AGENT_ROSTER.md"
