@@ -20,15 +20,10 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/reaper-feasibility/SKILL.md"
-  - "skill://.kiro/skills/bounded-research/SKILL.md"
-  - "file://.kiro/steering/agents/13-research-agent.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
+  - "skill://../skills/reaper-feasibility/SKILL.md"
+  - "skill://../skills/bounded-research/SKILL.md"
+  - "file://../steering/agents/13-research-agent.md"
+  - "file://../AGENT_ROSTER.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "13 Research Agent ready."
