@@ -1,6 +1,7 @@
 ---
 name: "15-frontend-engineer"
 description: "Implements browser-facing product behavior and interfaces from approved specs."
+model: "claude-sonnet-5"
 tools:
   - read
   - write
