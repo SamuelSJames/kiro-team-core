@@ -38,3 +38,7 @@ Agent 26 owns the reusable Graphify knowledge-map procedure. Use the `graphify` 
 
 ## Documentation Method
 Use the `documentation-adr` skill for durable project docs, runbooks, and architecture decision records. Preserve existing conventions, document why/constraints, and never invent decisions while recording them.
+
+
+## Takeover Assessment
+For an existing project, use `project-takeover-assessment` after Agent 19 establishes the private Gitea working repository. Map the codebase with Graphify, organize durable project knowledge, and produce an evidence-based completion map against the end objective. Do not refactor application code during assessment.
