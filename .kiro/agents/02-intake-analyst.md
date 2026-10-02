@@ -29,6 +29,7 @@ permissions:
         - "infrastructure/**"
       effect: deny
 resources:
+  - "skill://.kiro/skills/intake-validation/SKILL.md"
   - "file://.kiro/steering/agents/02-intake-analyst.md"
   - "file://AGENT_ROSTER.md"
   - "file://WORKFLOW.md"
