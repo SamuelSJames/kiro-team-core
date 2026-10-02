@@ -20,15 +20,10 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/midi-engineering/SKILL.md"
-  - "skill://.kiro/skills/debugging-root-cause/SKILL.md"
-  - "file://.kiro/steering/agents/23-midi-engineer.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
+  - "skill://../skills/midi-engineering/SKILL.md"
+  - "skill://../skills/debugging-root-cause/SKILL.md"
+  - "file://../steering/agents/23-midi-engineer.md"
+  - "file://../AGENT_ROSTER.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "23 MIDI Engineer ready."
