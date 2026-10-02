@@ -22,25 +22,13 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/debugging-root-cause/SKILL.md"
-  - "skill://.kiro/skills/proxmox-project-provision/SKILL.md"
-  - "file://.kiro/steering/agents/20-proxmox-infrastructure-engineer.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://TOOLING.md"
-  - "file://WORKSPACE_HYGIENE.md"
-  - "file://WORKFLOW.md"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
-mcpServers:
-  proxmox:
-    command: "ssh"
-    args:
-      - "-T"
-      - "pve3"
-      - "pct exec 301 -- /opt/mcp/run-proxmox.sh"
+  - "skill://../skills/debugging-root-cause/SKILL.md"
+  - "skill://../skills/proxmox-project-provision/SKILL.md"
+  - "file://../steering/agents/20-proxmox-infrastructure-engineer.md"
+  - "file://../AGENT_ROSTER.md"
+  - "file://../TOOLING.md"
+  - "file://../WORKSPACE_HYGIENE.md"
+  - "file://../WORKFLOW.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "20 Proxmox Infrastructure Engineer ready."
