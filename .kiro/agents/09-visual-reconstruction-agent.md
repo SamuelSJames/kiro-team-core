@@ -22,25 +22,12 @@ permissions:
         - "**/*"
       effect: ask
 resources:
-  - "skill://.kiro/skills/visual-fidelity-check/SKILL.md"
-  - "file://.kiro/steering/agents/09-visual-reconstruction-agent.md"
-  - "file://AGENT_ROSTER.md"
-  - "file://WORKFLOW.md"
-  - "file://TOOLING.md"
-  - "file://WORKSPACE_HYGIENE.md"
-  - "file://mockups/**"
-  - "file://INTAKE.md"
-  - "file://PROJECT_REQUIREMENTS.md"
-  - "file://PRODUCT_SPEC.md"
-  - "file://ARCHITECTURE.md"
-  - "file://DECISIONS.md"
-mcpServers:
-  playwright:
-    command: "ssh"
-    args:
-      - "-T"
-      - "pve3"
-      - "pct exec 301 -- /opt/mcp/run-playwright.sh"
+  - "skill://../skills/visual-fidelity-check/SKILL.md"
+  - "file://../steering/agents/09-visual-reconstruction-agent.md"
+  - "file://../AGENT_ROSTER.md"
+  - "file://../WORKFLOW.md"
+  - "file://../TOOLING.md"
+  - "file://../WORKSPACE_HYGIENE.md"
 includeMcpJson: false
 includePowers: false
 welcomeMessage: "09 Visual Reconstruction Agent ready."
