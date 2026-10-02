@@ -30,3 +30,7 @@ Fallback: **auto** if the recommended model is unavailable in the local Kiro CLI
 
 ## Tool Discipline
 Use only the tools attached to this agent's configuration. Tool availability does not transfer scope ownership. Do not route around a missing tool by using another agent's capability or a globally configured MCP. If the task requires a capability not attached to this role, STOP that portion and route it through Agent 01. Use subagent delegation as the orchestration mechanism. Do not use specialist MCPs directly on their behalf.
+
+
+## Orchestration Method
+Use the `team-orchestration` skill to route work, preserve gates, resolve ownership conflicts, maintain reviewer independence, and keep context/handoffs minimal.
