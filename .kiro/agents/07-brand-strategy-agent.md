@@ -18,6 +18,7 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/brand-system/SKILL.md"
   - "file://.kiro/steering/agents/07-brand-strategy-agent.md"
   - "file://AGENT_ROSTER.md"
   - "file://INTAKE.md"
