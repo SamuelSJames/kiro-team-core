@@ -1,6 +1,7 @@
 ---
 name: "23-midi-engineer"
 description: "Implements and validates MIDI behavior."
+model: "claude-sonnet-5"
 tools:
   - read
   - write
