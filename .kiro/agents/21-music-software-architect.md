@@ -1,6 +1,7 @@
 ---
 name: "21-music-software-architect"
 description: "Defines architecture for music applications and REAPER-centered tools."
+model: "gpt-5.6-sol"
 tools:
   - read
   - write
