@@ -34,3 +34,7 @@ Use only the tools attached to this agent's configuration. Tool availability doe
 
 ## Graphify
 Agent 26 owns the reusable Graphify knowledge-map procedure. Use the `graphify` CLI through shell to build/query task-scoped codebase graphs when relationship mapping will reduce broad file reads. Graph output is temporary by default and must not become a competing permanent knowledge store.
+
+
+## Documentation Method
+Use the `documentation-adr` skill for durable project docs, runbooks, and architecture decision records. Preserve existing conventions, document why/constraints, and never invent decisions while recording them.
