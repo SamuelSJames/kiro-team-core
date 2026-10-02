@@ -20,6 +20,8 @@ permissions:
         - "**/*"
       effect: ask
 resources:
+  - "skill://.kiro/skills/debugging-root-cause/SKILL.md"
+  - "skill://.kiro/skills/database-design/SKILL.md"
   - "file://.kiro/steering/agents/17-database-engineer.md"
   - "file://AGENT_ROSTER.md"
   - "file://INTAKE.md"
