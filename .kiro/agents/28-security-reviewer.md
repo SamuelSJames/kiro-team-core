@@ -1,6 +1,7 @@
 ---
 name: "28-security-reviewer"
 description: "Independently reviews security, secrets, permissions, dependencies, and attack surface."
+model: "claude-opus-5"
 tools:
   - read
   - write
