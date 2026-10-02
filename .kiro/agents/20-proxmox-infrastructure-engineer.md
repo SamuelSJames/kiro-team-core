@@ -1,6 +1,7 @@
 ---
 name: "20-proxmox-infrastructure-engineer"
 description: "Owns autonomous project infrastructure on the explicitly authorized Proxmox development environment."
+model: "claude-opus-5"
 tools:
   - read
   - write
